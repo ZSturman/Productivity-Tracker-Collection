@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF0008DC2A79ED4000362550 /* ActionStateListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0008DB2A79ED4000362550 /* ActionStateListItemView.swift */; };
+		EF0008DF2A79ED7500362550 /* ExecutionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0008DE2A79ED7500362550 /* ExecutionViewModel.swift */; };
+		EF0008E12A79EDC500362550 /* DismissAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0008E02A79EDC500362550 /* DismissAction.swift */; };
+		EF096CE12A7C636B00713562 /* EditActionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF096CE02A7C636B00713562 /* EditActionStateView.swift */; };
+		EF1FA5CF2A7CFF02002D9DC3 /* EditInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FA5CE2A7CFF02002D9DC3 /* EditInputFields.swift */; };
+		EF41CF662A733D2E002C0D0F /* ActionStateExecutionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41CF652A733D2E002C0D0F /* ActionStateExecutionApp.swift */; };
+		EF41CF682A733D2E002C0D0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41CF672A733D2E002C0D0F /* ContentView.swift */; };
+		EF41CF762A733D61002C0D0F /* ActionStatesCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF41CF742A733D61002C0D0F /* ActionStatesCoreData.xcdatamodeld */; };
+		EF76245A2A7D787F0055D8D1 /* InputFieldVariablesNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7624592A7D787F0055D8D1 /* InputFieldVariablesNew.swift */; };
+		EF789BD92A752B6400B03847 /* ActionStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF789BD82A752B6400B03847 /* ActionStateViewModel.swift */; };
+		EF9221122A76797E0098D207 /* NewInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9221112A76797E0098D207 /* NewInputFields.swift */; };
+		EF97C4A02A7351100036A76B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C49F2A7351100036A76B /* DataController.swift */; };
+		EF97C4BF2A7371220036A76B /* CreateActionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4BE2A7371220036A76B /* CreateActionStateView.swift */; };
+		EF97C4C72A73B1230036A76B /* ExecutionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4C62A73B1230036A76B /* ExecutionListView.swift */; };
+		EF97C4DC2A73B4F70036A76B /* ListItemEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4CA2A73B4F70036A76B /* ListItemEntity+CoreDataClass.swift */; };
+		EF97C4DD2A73B4F70036A76B /* ListItemEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4CB2A73B4F70036A76B /* ListItemEntity+CoreDataProperties.swift */; };
+		EF97C4DE2A73B4F70036A76B /* ListEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4CC2A73B4F70036A76B /* ListEntity+CoreDataClass.swift */; };
+		EF97C4DF2A73B4F70036A76B /* ListEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4CD2A73B4F70036A76B /* ListEntity+CoreDataProperties.swift */; };
+		EF97C4E02A73B4F70036A76B /* TagsEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4CE2A73B4F70036A76B /* TagsEntity+CoreDataClass.swift */; };
+		EF97C4E12A73B4F70036A76B /* TagsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4CF2A73B4F70036A76B /* TagsEntity+CoreDataProperties.swift */; };
+		EF97C4E42A73B4F70036A76B /* FieldVariableEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4D22A73B4F70036A76B /* FieldVariableEntity+CoreDataClass.swift */; };
+		EF97C4E52A73B4F70036A76B /* FieldVariableEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4D32A73B4F70036A76B /* FieldVariableEntity+CoreDataProperties.swift */; };
+		EF97C4E82A73B4F70036A76B /* FieldValueEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4D62A73B4F70036A76B /* FieldValueEntity+CoreDataClass.swift */; };
+		EF97C4E92A73B4F70036A76B /* FieldValueEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4D72A73B4F70036A76B /* FieldValueEntity+CoreDataProperties.swift */; };
+		EF97C4F32A73B65D0036A76B /* NewTopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4F22A73B65D0036A76B /* NewTopicsView.swift */; };
+		EF97C4F52A73B6840036A76B /* NewTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4F42A73B6840036A76B /* NewTagView.swift */; };
+		EF97C4F82A73BADC0036A76B /* NewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4F72A73BADC0036A76B /* NewListView.swift */; };
+		EF97C4FA2A73BB8F0036A76B /* ListListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4F92A73BB8F0036A76B /* ListListView.swift */; };
+		EF97C4FC2A73BBB50036A76B /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97C4FB2A73BBB50036A76B /* ListItemView.swift */; };
+		EFA458042A794360003FE204 /* ListInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA458032A794360003FE204 /* ListInputFields.swift */; };
+		EFA458062A79544F003FE204 /* ListFieldVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA458052A79544F003FE204 /* ListFieldVariables.swift */; };
+		EFAB70692A78C1DF00DF7363 /* CountInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB70682A78C1DF00DF7363 /* CountInputFields.swift */; };
+		EFAB706B2A78C4F900DF7363 /* InputFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB706A2A78C4F900DF7363 /* InputFieldModel.swift */; };
+		EFAB706F2A78C7F800DF7363 /* FieldCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB706E2A78C7F800DF7363 /* FieldCreator.swift */; };
+		EFAB70712A78F2E500DF7363 /* FieldVariableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB70702A78F2E500DF7363 /* FieldVariableViewModel.swift */; };
+		EFAB70732A79058900DF7363 /* FieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB70722A79058900DF7363 /* FieldViewModel.swift */; };
+		EFAB70792A79145000DF7363 /* CountFieldVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB70782A79145000DF7363 /* CountFieldVariables.swift */; };
+		EFAB707B2A791F2E00DF7363 /* TextInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB707A2A791F2E00DF7363 /* TextInputFields.swift */; };
+		EFAB707D2A7922D100DF7363 /* BoolInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB707C2A7922D100DF7363 /* BoolInputFields.swift */; };
+		EFAB707F2A79236D00DF7363 /* TextFieldVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB707E2A79236D00DF7363 /* TextFieldVariables.swift */; };
+		EFAB70812A7924AC00DF7363 /* BoolFieldVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB70802A7924AC00DF7363 /* BoolFieldVariables.swift */; };
+		EFAB70832A79266C00DF7363 /* NumberFieldVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB70822A79266C00DF7363 /* NumberFieldVariables.swift */; };
+		EFAB70852A7926C500DF7363 /* NumberInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB70842A7926C500DF7363 /* NumberInputFields.swift */; };
+		EFCE681B2A7ADEBB006B9DBF /* FieldEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE68192A7ADEBB006B9DBF /* FieldEntity+CoreDataClass.swift */; };
+		EFCE681C2A7ADEBB006B9DBF /* FieldEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE681A2A7ADEBB006B9DBF /* FieldEntity+CoreDataProperties.swift */; };
+		EFCE681E2A7AE6D4006B9DBF /* ExecutionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE681D2A7AE6D4006B9DBF /* ExecutionInputView.swift */; };
+		EFF68A6A2A744382005EF8B5 /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68A692A744382005EF8B5 /* UserSettingsView.swift */; };
+		EFF68A6C2A7444BB005EF8B5 /* ActionStatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68A6B2A7444BB005EF8B5 /* ActionStatesListView.swift */; };
+		EFF68A702A744BF4005EF8B5 /* ExecutionDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68A6F2A744BF4005EF8B5 /* ExecutionDetailedView.swift */; };
+		EFF68A732A744F95005EF8B5 /* ExecutionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68A712A744F95005EF8B5 /* ExecutionEntity+CoreDataClass.swift */; };
+		EFF68A742A744F95005EF8B5 /* ExecutionEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68A722A744F95005EF8B5 /* ExecutionEntity+CoreDataProperties.swift */; };
+		EFF68A9D2A746459005EF8B5 /* FieldTypeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68A9C2A746459005EF8B5 /* FieldTypeDetails.swift */; };
+		EFF68AA22A746525005EF8B5 /* TopicsEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68A9E2A746525005EF8B5 /* TopicsEntity+CoreDataClass.swift */; };
+		EFF68AA32A746525005EF8B5 /* TopicsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68A9F2A746525005EF8B5 /* TopicsEntity+CoreDataProperties.swift */; };
+		EFF68AA42A746525005EF8B5 /* ActionStateEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68AA02A746525005EF8B5 /* ActionStateEntity+CoreDataClass.swift */; };
+		EFF68AA52A746525005EF8B5 /* ActionStateEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF68AA12A746525005EF8B5 /* ActionStateEntity+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF0008DB2A79ED4000362550 /* ActionStateListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateListItemView.swift; sourceTree = "<group>"; };
+		EF0008DE2A79ED7500362550 /* ExecutionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionViewModel.swift; sourceTree = "<group>"; };
+		EF0008E02A79EDC500362550 /* DismissAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissAction.swift; sourceTree = "<group>"; };
+		EF096CE02A7C636B00713562 /* EditActionStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActionStateView.swift; sourceTree = "<group>"; };
+		EF1FA5CE2A7CFF02002D9DC3 /* EditInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInputFields.swift; sourceTree = "<group>"; };
+		EF41CF622A733D2E002C0D0F /* ActionStateExecution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionStateExecution.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF41CF652A733D2E002C0D0F /* ActionStateExecutionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateExecutionApp.swift; sourceTree = "<group>"; };
+		EF41CF672A733D2E002C0D0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF41CF692A733D2F002C0D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF41CF6B2A733D2F002C0D0F /* ActionStateExecution.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActionStateExecution.entitlements; sourceTree = "<group>"; };
+		EF41CF6D2A733D2F002C0D0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF41CF752A733D61002C0D0F /* ActionStatesCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActionStatesCoreData.xcdatamodel; sourceTree = "<group>"; };
+		EF7624592A7D787F0055D8D1 /* InputFieldVariablesNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldVariablesNew.swift; sourceTree = "<group>"; };
+		EF789BD82A752B6400B03847 /* ActionStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateViewModel.swift; sourceTree = "<group>"; };
+		EF9221112A76797E0098D207 /* NewInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInputFields.swift; sourceTree = "<group>"; };
+		EF97C49F2A7351100036A76B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		EF97C4BE2A7371220036A76B /* CreateActionStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActionStateView.swift; sourceTree = "<group>"; };
+		EF97C4C62A73B1230036A76B /* ExecutionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionListView.swift; sourceTree = "<group>"; };
+		EF97C4CA2A73B4F70036A76B /* ListItemEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListItemEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EF97C4CB2A73B4F70036A76B /* ListItemEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListItemEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF97C4CC2A73B4F70036A76B /* ListEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EF97C4CD2A73B4F70036A76B /* ListEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF97C4CE2A73B4F70036A76B /* TagsEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TagsEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EF97C4CF2A73B4F70036A76B /* TagsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TagsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF97C4D22A73B4F70036A76B /* FieldVariableEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FieldVariableEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EF97C4D32A73B4F70036A76B /* FieldVariableEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FieldVariableEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF97C4D62A73B4F70036A76B /* FieldValueEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FieldValueEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EF97C4D72A73B4F70036A76B /* FieldValueEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FieldValueEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF97C4F22A73B65D0036A76B /* NewTopicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTopicsView.swift; sourceTree = "<group>"; };
+		EF97C4F42A73B6840036A76B /* NewTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTagView.swift; sourceTree = "<group>"; };
+		EF97C4F72A73BADC0036A76B /* NewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListView.swift; sourceTree = "<group>"; };
+		EF97C4F92A73BB8F0036A76B /* ListListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListListView.swift; sourceTree = "<group>"; };
+		EF97C4FB2A73BBB50036A76B /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		EFA458032A794360003FE204 /* ListInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInputFields.swift; sourceTree = "<group>"; };
+		EFA458052A79544F003FE204 /* ListFieldVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFieldVariables.swift; sourceTree = "<group>"; };
+		EFAB70682A78C1DF00DF7363 /* CountInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountInputFields.swift; sourceTree = "<group>"; };
+		EFAB706A2A78C4F900DF7363 /* InputFieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldModel.swift; sourceTree = "<group>"; };
+		EFAB706E2A78C7F800DF7363 /* FieldCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCreator.swift; sourceTree = "<group>"; };
+		EFAB70702A78F2E500DF7363 /* FieldVariableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldVariableViewModel.swift; sourceTree = "<group>"; };
+		EFAB70722A79058900DF7363 /* FieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldViewModel.swift; sourceTree = "<group>"; };
+		EFAB70782A79145000DF7363 /* CountFieldVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountFieldVariables.swift; sourceTree = "<group>"; };
+		EFAB707A2A791F2E00DF7363 /* TextInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputFields.swift; sourceTree = "<group>"; };
+		EFAB707C2A7922D100DF7363 /* BoolInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolInputFields.swift; sourceTree = "<group>"; };
+		EFAB707E2A79236D00DF7363 /* TextFieldVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldVariables.swift; sourceTree = "<group>"; };
+		EFAB70802A7924AC00DF7363 /* BoolFieldVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolFieldVariables.swift; sourceTree = "<group>"; };
+		EFAB70822A79266C00DF7363 /* NumberFieldVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFieldVariables.swift; sourceTree = "<group>"; };
+		EFAB70842A7926C500DF7363 /* NumberInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberInputFields.swift; sourceTree = "<group>"; };
+		EFCE68192A7ADEBB006B9DBF /* FieldEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FieldEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EFCE681A2A7ADEBB006B9DBF /* FieldEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FieldEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EFCE681D2A7AE6D4006B9DBF /* ExecutionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionInputView.swift; sourceTree = "<group>"; };
+		EFF68A692A744382005EF8B5 /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
+		EFF68A6B2A7444BB005EF8B5 /* ActionStatesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStatesListView.swift; sourceTree = "<group>"; };
+		EFF68A6F2A744BF4005EF8B5 /* ExecutionDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionDetailedView.swift; sourceTree = "<group>"; };
+		EFF68A712A744F95005EF8B5 /* ExecutionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExecutionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EFF68A722A744F95005EF8B5 /* ExecutionEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExecutionEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EFF68A912A7463FB005EF8B5 /* topics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = topics.json; path = ActionStateExecution/topics.json; sourceTree = SOURCE_ROOT; };
+		EFF68A922A7463FB005EF8B5 /* topics.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = topics.plist; path = ActionStateExecution/topics.plist; sourceTree = SOURCE_ROOT; };
+		EFF68A932A7463FB005EF8B5 /* TopicPlistGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopicPlistGenerator.swift; path = ActionStateExecution/TopicPlistGenerator.swift; sourceTree = SOURCE_ROOT; };
+		EFF68A9C2A746459005EF8B5 /* FieldTypeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTypeDetails.swift; sourceTree = "<group>"; };
+		EFF68A9E2A746525005EF8B5 /* TopicsEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopicsEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EFF68A9F2A746525005EF8B5 /* TopicsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopicsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EFF68AA02A746525005EF8B5 /* ActionStateEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionStateEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EFF68AA12A746525005EF8B5 /* ActionStateEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionStateEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF41CF5F2A733D2E002C0D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF0008DD2A79ED6600362550 /* Executions */ = {
+			isa = PBXGroup;
+			children = (
+				EF0008DE2A79ED7500362550 /* ExecutionViewModel.swift */,
+			);
+			path = Executions;
+			sourceTree = "<group>";
+		};
+		EF41CF592A733D2E002C0D0F = {
+			isa = PBXGroup;
+			children = (
+				EF41CF642A733D2E002C0D0F /* ActionStateExecution */,
+				EF41CF632A733D2E002C0D0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF41CF632A733D2E002C0D0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF41CF622A733D2E002C0D0F /* ActionStateExecution.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF41CF642A733D2E002C0D0F /* ActionStateExecution */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB706D2A78C7DB00DF7363 /* Protocols */,
+				EF789BD62A751FBC00B03847 /* DataModel */,
+				EF97C49E2A7350FB0036A76B /* ViewModels */,
+				EF97C49D2A7350F60036A76B /* Views */,
+				EF97C49C2A7350F00036A76B /* Models */,
+				EF41CF652A733D2E002C0D0F /* ActionStateExecutionApp.swift */,
+				EF41CF672A733D2E002C0D0F /* ContentView.swift */,
+				EF41CF692A733D2F002C0D0F /* Assets.xcassets */,
+				EF41CF6B2A733D2F002C0D0F /* ActionStateExecution.entitlements */,
+				EF41CF6C2A733D2F002C0D0F /* Preview Content */,
+			);
+			path = ActionStateExecution;
+			sourceTree = "<group>";
+		};
+		EF41CF6C2A733D2F002C0D0F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFF68A932A7463FB005EF8B5 /* TopicPlistGenerator.swift */,
+				EFF68A912A7463FB005EF8B5 /* topics.json */,
+				EFF68A922A7463FB005EF8B5 /* topics.plist */,
+				EF41CF6D2A733D2F002C0D0F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF789BD62A751FBC00B03847 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF97C49F2A7351100036A76B /* DataController.swift */,
+				EF41CF742A733D61002C0D0F /* ActionStatesCoreData.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		EF789BD72A752B5200B03847 /* ActionStates */ = {
+			isa = PBXGroup;
+			children = (
+				EF789BD82A752B6400B03847 /* ActionStateViewModel.swift */,
+			);
+			path = ActionStates;
+			sourceTree = "<group>";
+		};
+		EF97C49C2A7350F00036A76B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF97C4EE2A73B5170036A76B /* Topics */,
+				EF97C4ED2A73B5140036A76B /* Tags */,
+				EF97C4EC2A73B50D0036A76B /* Lists */,
+				EF97C4B92A7354730036A76B /* ActionStates */,
+				EF97C4B82A7354610036A76B /* Fields */,
+				EF97C4B72A73544D0036A76B /* Executions */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF97C49D2A7350F60036A76B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB70672A78C1CD00DF7363 /* InputFields */,
+				EFF68A9B2A746445005EF8B5 /* Helpers */,
+				EFF68A682A74436E005EF8B5 /* UserSettings */,
+				EF97C4F62A73BA5C0036A76B /* Lists */,
+				EF97C4F12A73B6480036A76B /* TagsAndTopics */,
+				EF97C4F02A73B6050036A76B /* Executions */,
+				EF97C4EF2A73B5F10036A76B /* ActionStates */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF97C49E2A7350FB0036A76B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF0008DD2A79ED6600362550 /* Executions */,
+				EFAB706C2A78C76E00DF7363 /* Fields */,
+				EF789BD72A752B5200B03847 /* ActionStates */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EF97C4B72A73544D0036A76B /* Executions */ = {
+			isa = PBXGroup;
+			children = (
+				EFF68A712A744F95005EF8B5 /* ExecutionEntity+CoreDataClass.swift */,
+				EFF68A722A744F95005EF8B5 /* ExecutionEntity+CoreDataProperties.swift */,
+			);
+			path = Executions;
+			sourceTree = "<group>";
+		};
+		EF97C4B82A7354610036A76B /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB706A2A78C4F900DF7363 /* InputFieldModel.swift */,
+				EFCE68192A7ADEBB006B9DBF /* FieldEntity+CoreDataClass.swift */,
+				EF97C4D22A73B4F70036A76B /* FieldVariableEntity+CoreDataClass.swift */,
+				EF97C4D62A73B4F70036A76B /* FieldValueEntity+CoreDataClass.swift */,
+				EF97C4D32A73B4F70036A76B /* FieldVariableEntity+CoreDataProperties.swift */,
+				EFCE681A2A7ADEBB006B9DBF /* FieldEntity+CoreDataProperties.swift */,
+				EF97C4D72A73B4F70036A76B /* FieldValueEntity+CoreDataProperties.swift */,
+				EF7624592A7D787F0055D8D1 /* InputFieldVariablesNew.swift */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		EF97C4B92A7354730036A76B /* ActionStates */ = {
+			isa = PBXGroup;
+			children = (
+				EFF68AA02A746525005EF8B5 /* ActionStateEntity+CoreDataClass.swift */,
+				EFF68AA12A746525005EF8B5 /* ActionStateEntity+CoreDataProperties.swift */,
+			);
+			path = ActionStates;
+			sourceTree = "<group>";
+		};
+		EF97C4EC2A73B50D0036A76B /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				EF97C4CA2A73B4F70036A76B /* ListItemEntity+CoreDataClass.swift */,
+				EF97C4CB2A73B4F70036A76B /* ListItemEntity+CoreDataProperties.swift */,
+				EF97C4CC2A73B4F70036A76B /* ListEntity+CoreDataClass.swift */,
+				EF97C4CD2A73B4F70036A76B /* ListEntity+CoreDataProperties.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		EF97C4ED2A73B5140036A76B /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				EF97C4CE2A73B4F70036A76B /* TagsEntity+CoreDataClass.swift */,
+				EF97C4CF2A73B4F70036A76B /* TagsEntity+CoreDataProperties.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		EF97C4EE2A73B5170036A76B /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				EFF68A9E2A746525005EF8B5 /* TopicsEntity+CoreDataClass.swift */,
+				EFF68A9F2A746525005EF8B5 /* TopicsEntity+CoreDataProperties.swift */,
+			);
+			path = Topics;
+			sourceTree = "<group>";
+		};
+		EF97C4EF2A73B5F10036A76B /* ActionStates */ = {
+			isa = PBXGroup;
+			children = (
+				EF096CE02A7C636B00713562 /* EditActionStateView.swift */,
+				EF97C4BE2A7371220036A76B /* CreateActionStateView.swift */,
+				EFF68A6B2A7444BB005EF8B5 /* ActionStatesListView.swift */,
+				EF0008DB2A79ED4000362550 /* ActionStateListItemView.swift */,
+			);
+			path = ActionStates;
+			sourceTree = "<group>";
+		};
+		EF97C4F02A73B6050036A76B /* Executions */ = {
+			isa = PBXGroup;
+			children = (
+				EF97C4C62A73B1230036A76B /* ExecutionListView.swift */,
+				EFF68A6F2A744BF4005EF8B5 /* ExecutionDetailedView.swift */,
+				EFCE681D2A7AE6D4006B9DBF /* ExecutionInputView.swift */,
+			);
+			path = Executions;
+			sourceTree = "<group>";
+		};
+		EF97C4F12A73B6480036A76B /* TagsAndTopics */ = {
+			isa = PBXGroup;
+			children = (
+				EF97C4F22A73B65D0036A76B /* NewTopicsView.swift */,
+				EF97C4F42A73B6840036A76B /* NewTagView.swift */,
+			);
+			path = TagsAndTopics;
+			sourceTree = "<group>";
+		};
+		EF97C4F62A73BA5C0036A76B /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				EF97C4F72A73BADC0036A76B /* NewListView.swift */,
+				EF97C4F92A73BB8F0036A76B /* ListListView.swift */,
+				EF97C4FB2A73BBB50036A76B /* ListItemView.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		EFAB70672A78C1CD00DF7363 /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				EF9221112A76797E0098D207 /* NewInputFields.swift */,
+				EFAB70682A78C1DF00DF7363 /* CountInputFields.swift */,
+				EFA458032A794360003FE204 /* ListInputFields.swift */,
+				EFAB707A2A791F2E00DF7363 /* TextInputFields.swift */,
+				EFAB707C2A7922D100DF7363 /* BoolInputFields.swift */,
+				EFAB70842A7926C500DF7363 /* NumberInputFields.swift */,
+				EF1FA5CE2A7CFF02002D9DC3 /* EditInputFields.swift */,
+			);
+			path = InputFields;
+			sourceTree = "<group>";
+		};
+		EFAB706C2A78C76E00DF7363 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB70702A78F2E500DF7363 /* FieldVariableViewModel.swift */,
+				EFAB70722A79058900DF7363 /* FieldViewModel.swift */,
+				EFAB70782A79145000DF7363 /* CountFieldVariables.swift */,
+				EFA458052A79544F003FE204 /* ListFieldVariables.swift */,
+				EFAB707E2A79236D00DF7363 /* TextFieldVariables.swift */,
+				EFAB70802A7924AC00DF7363 /* BoolFieldVariables.swift */,
+				EFAB70822A79266C00DF7363 /* NumberFieldVariables.swift */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		EFAB706D2A78C7DB00DF7363 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB706E2A78C7F800DF7363 /* FieldCreator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EFF68A682A74436E005EF8B5 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				EFF68A692A744382005EF8B5 /* UserSettingsView.swift */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		EFF68A9B2A746445005EF8B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFF68A9C2A746459005EF8B5 /* FieldTypeDetails.swift */,
+				EF0008E02A79EDC500362550 /* DismissAction.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF41CF612A733D2E002C0D0F /* ActionStateExecution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF41CF712A733D2F002C0D0F /* Build configuration list for PBXNativeTarget "ActionStateExecution" */;
+			buildPhases = (
+				EF41CF5E2A733D2E002C0D0F /* Sources */,
+				EF41CF5F2A733D2E002C0D0F /* Frameworks */,
+				EF41CF602A733D2E002C0D0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionStateExecution;
+			productName = ActionStateExecution;
+			productReference = EF41CF622A733D2E002C0D0F /* ActionStateExecution.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF41CF5A2A733D2E002C0D0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EF41CF612A733D2E002C0D0F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EF41CF5D2A733D2E002C0D0F /* Build configuration list for PBXProject "ActionStateExecution" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF41CF592A733D2E002C0D0F;
+			productRefGroup = EF41CF632A733D2E002C0D0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF41CF612A733D2E002C0D0F /* ActionStateExecution */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF41CF602A733D2E002C0D0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF41CF5E2A733D2E002C0D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF97C4DC2A73B4F70036A76B /* ListItemEntity+CoreDataClass.swift in Sources */,
+				EF97C4E12A73B4F70036A76B /* TagsEntity+CoreDataProperties.swift in Sources */,
+				EF789BD92A752B6400B03847 /* ActionStateViewModel.swift in Sources */,
+				EFAB707D2A7922D100DF7363 /* BoolInputFields.swift in Sources */,
+				EFAB70832A79266C00DF7363 /* NumberFieldVariables.swift in Sources */,
+				EFF68AA52A746525005EF8B5 /* ActionStateEntity+CoreDataProperties.swift in Sources */,
+				EFF68AA32A746525005EF8B5 /* TopicsEntity+CoreDataProperties.swift in Sources */,
+				EFAB70692A78C1DF00DF7363 /* CountInputFields.swift in Sources */,
+				EF096CE12A7C636B00713562 /* EditActionStateView.swift in Sources */,
+				EF97C4FA2A73BB8F0036A76B /* ListListView.swift in Sources */,
+				EFCE681E2A7AE6D4006B9DBF /* ExecutionInputView.swift in Sources */,
+				EF97C4DD2A73B4F70036A76B /* ListItemEntity+CoreDataProperties.swift in Sources */,
+				EF41CF682A733D2E002C0D0F /* ContentView.swift in Sources */,
+				EF97C4F82A73BADC0036A76B /* NewListView.swift in Sources */,
+				EF76245A2A7D787F0055D8D1 /* InputFieldVariablesNew.swift in Sources */,
+				EFAB70732A79058900DF7363 /* FieldViewModel.swift in Sources */,
+				EF97C4C72A73B1230036A76B /* ExecutionListView.swift in Sources */,
+				EF97C4E02A73B4F70036A76B /* TagsEntity+CoreDataClass.swift in Sources */,
+				EF97C4F52A73B6840036A76B /* NewTagView.swift in Sources */,
+				EF0008DC2A79ED4000362550 /* ActionStateListItemView.swift in Sources */,
+				EFF68A702A744BF4005EF8B5 /* ExecutionDetailedView.swift in Sources */,
+				EFF68AA42A746525005EF8B5 /* ActionStateEntity+CoreDataClass.swift in Sources */,
+				EF97C4BF2A7371220036A76B /* CreateActionStateView.swift in Sources */,
+				EFAB70852A7926C500DF7363 /* NumberInputFields.swift in Sources */,
+				EFCE681B2A7ADEBB006B9DBF /* FieldEntity+CoreDataClass.swift in Sources */,
+				EF97C4A02A7351100036A76B /* DataController.swift in Sources */,
+				EFAB707F2A79236D00DF7363 /* TextFieldVariables.swift in Sources */,
+				EF97C4E42A73B4F70036A76B /* FieldVariableEntity+CoreDataClass.swift in Sources */,
+				EFF68A742A744F95005EF8B5 /* ExecutionEntity+CoreDataProperties.swift in Sources */,
+				EF41CF662A733D2E002C0D0F /* ActionStateExecutionApp.swift in Sources */,
+				EFA458062A79544F003FE204 /* ListFieldVariables.swift in Sources */,
+				EFF68A732A744F95005EF8B5 /* ExecutionEntity+CoreDataClass.swift in Sources */,
+				EF97C4E52A73B4F70036A76B /* FieldVariableEntity+CoreDataProperties.swift in Sources */,
+				EF97C4DF2A73B4F70036A76B /* ListEntity+CoreDataProperties.swift in Sources */,
+				EF0008E12A79EDC500362550 /* DismissAction.swift in Sources */,
+				EF41CF762A733D61002C0D0F /* ActionStatesCoreData.xcdatamodeld in Sources */,
+				EFAB707B2A791F2E00DF7363 /* TextInputFields.swift in Sources */,
+				EFAB70812A7924AC00DF7363 /* BoolFieldVariables.swift in Sources */,
+				EFAB706B2A78C4F900DF7363 /* InputFieldModel.swift in Sources */,
+				EFCE681C2A7ADEBB006B9DBF /* FieldEntity+CoreDataProperties.swift in Sources */,
+				EFF68A6C2A7444BB005EF8B5 /* ActionStatesListView.swift in Sources */,
+				EF9221122A76797E0098D207 /* NewInputFields.swift in Sources */,
+				EF1FA5CF2A7CFF02002D9DC3 /* EditInputFields.swift in Sources */,
+				EF97C4FC2A73BBB50036A76B /* ListItemView.swift in Sources */,
+				EF0008DF2A79ED7500362550 /* ExecutionViewModel.swift in Sources */,
+				EF97C4DE2A73B4F70036A76B /* ListEntity+CoreDataClass.swift in Sources */,
+				EFF68A9D2A746459005EF8B5 /* FieldTypeDetails.swift in Sources */,
+				EFAB70792A79145000DF7363 /* CountFieldVariables.swift in Sources */,
+				EF97C4E82A73B4F70036A76B /* FieldValueEntity+CoreDataClass.swift in Sources */,
+				EFF68AA22A746525005EF8B5 /* TopicsEntity+CoreDataClass.swift in Sources */,
+				EFF68A6A2A744382005EF8B5 /* UserSettingsView.swift in Sources */,
+				EFA458042A794360003FE204 /* ListInputFields.swift in Sources */,
+				EF97C4E92A73B4F70036A76B /* FieldValueEntity+CoreDataProperties.swift in Sources */,
+				EFAB70712A78F2E500DF7363 /* FieldVariableViewModel.swift in Sources */,
+				EFAB706F2A78C7F800DF7363 /* FieldCreator.swift in Sources */,
+				EF97C4F32A73B65D0036A76B /* NewTopicsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EF41CF6F2A733D2F002C0D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF41CF702A733D2F002C0D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EF41CF722A733D2F002C0D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ActionStateExecution/ActionStateExecution.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ActionStateExecution/Preview Content\"";
+				DEVELOPMENT_TEAM = MF8J7AY2X3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsdynamics.ActionStateExecution;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF41CF732A733D2F002C0D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ActionStateExecution/ActionStateExecution.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ActionStateExecution/Preview Content\"";
+				DEVELOPMENT_TEAM = MF8J7AY2X3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsdynamics.ActionStateExecution;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF41CF5D2A733D2E002C0D0F /* Build configuration list for PBXProject "ActionStateExecution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF41CF6F2A733D2F002C0D0F /* Debug */,
+				EF41CF702A733D2F002C0D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF41CF712A733D2F002C0D0F /* Build configuration list for PBXNativeTarget "ActionStateExecution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF41CF722A733D2F002C0D0F /* Debug */,
+				EF41CF732A733D2F002C0D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF41CF742A733D61002C0D0F /* ActionStatesCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF41CF752A733D61002C0D0F /* ActionStatesCoreData.xcdatamodel */,
+			);
+			currentVersion = EF41CF752A733D61002C0D0F /* ActionStatesCoreData.xcdatamodel */;
+			path = ActionStatesCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF41CF5A2A733D2E002C0D0F /* Project object */;
+}

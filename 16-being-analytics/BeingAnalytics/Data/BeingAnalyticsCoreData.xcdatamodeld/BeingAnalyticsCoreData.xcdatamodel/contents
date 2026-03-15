@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="22G120" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ActionState" representedClassName="ActionState" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isAction" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="executions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Execution" inverseName="actionState" inverseEntity="Execution"/>
+        <relationship name="globalVariables" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GlobalVariable" inverseName="actionState" inverseEntity="GlobalVariable"/>
+        <relationship name="inputs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Input" inverseName="actionState" inverseEntity="Input"/>
+        <relationship name="triggers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Trigger" inverseName="actionState" inverseEntity="Trigger"/>
+    </entity>
+    <entity name="Execution" representedClassName="Execution" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="outputValue" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="executions" inverseEntity="ActionState"/>
+        <relationship name="inputExecutions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="InputExecution" inverseName="execution" inverseEntity="InputExecution"/>
+        <relationship name="trigger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trigger" inverseName="executions" inverseEntity="Trigger"/>
+    </entity>
+    <entity name="GlobalVariable" representedClassName="GlobalVariable" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="variableBool" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="variableDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="variableDouble" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="variableInt" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="variableString" optional="YES" attributeType="String"/>
+        <attribute name="variableTitle" optional="YES" attributeType="String"/>
+        <attribute name="variableType" optional="YES" attributeType="String"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="globalVariables" inverseEntity="ActionState"/>
+    </entity>
+    <entity name="Input" representedClassName="Input" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inputType" attributeType="String"/>
+        <attribute name="order" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="userActionRequired" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="inputs" inverseEntity="ActionState"/>
+        <relationship name="calculationInputOne" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InputCalculate" inverseName="selectedInputOne" inverseEntity="InputCalculate"/>
+        <relationship name="calculationInputTwo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InputCalculate" inverseName="selectedInputTwo" inverseEntity="InputCalculate"/>
+        <relationship name="executions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InputExecution" inverseName="input" inverseEntity="InputExecution"/>
+        <relationship name="nextInput" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="previousInput" inverseEntity="Input"/>
+        <relationship name="previousInput" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="nextInput" inverseEntity="Input"/>
+        <relationship name="trigger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trigger" inverseName="inputs" inverseEntity="Trigger"/>
+    </entity>
+    <entity name="InputAskForNumber" representedClassName="InputAskForNumber" parentEntity="Input" syncable="YES" codeGenerationType="class">
+        <attribute name="allowDecimals" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="allowNegatives" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="currency" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="defaultValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="maxValue" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="minValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="promptBool" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="promptString" optional="YES" attributeType="String"/>
+        <attribute name="stepCount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="useRange" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="InputAskForText" representedClassName="InputAskForText" parentEntity="Input" syncable="YES" codeGenerationType="class">
+        <attribute name="allowBlank" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="defaultBool" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="defaultString" optional="YES" attributeType="String"/>
+        <attribute name="promptBool" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="promptString" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InputCalculate" representedClassName="InputCalculate" parentEntity="Input" syncable="YES" codeGenerationType="class">
+        <attribute name="calculateOperation" optional="YES" attributeType="String"/>
+        <attribute name="calculationDateOrTime" optional="YES" attributeType="String"/>
+        <attribute name="calculationOutputType" optional="YES" attributeType="String"/>
+        <attribute name="calculationType" optional="YES" attributeType="String"/>
+        <attribute name="valueOne" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="valueOneIsInput" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="valueTwo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="valueTwoIsInput" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="selectedInputOne" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="calculationInputOne" inverseEntity="Input"/>
+        <relationship name="selectedInputTwo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="calculationInputTwo" inverseEntity="Input"/>
+    </entity>
+    <entity name="InputCurrentDatetime" representedClassName="InputCurrentDatetime" parentEntity="Input" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="time" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="InputExecution" representedClassName="InputExecution" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inputPromptBool" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="inputPromptString" optional="YES" attributeType="String"/>
+        <attribute name="inputTitle" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="outputType" optional="YES" attributeType="String"/>
+        <relationship name="calculationInputOne" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InputExecutionCalculation" inverseName="inputOne" inverseEntity="InputExecutionCalculation"/>
+        <relationship name="calculationInputTwo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InputExecutionCalculation" inverseName="inputTwo" inverseEntity="InputExecutionCalculation"/>
+        <relationship name="execution" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Execution" inverseName="inputExecutions" inverseEntity="Execution"/>
+        <relationship name="input" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="executions" inverseEntity="Input"/>
+    </entity>
+    <entity name="InputExecutionCalculation" representedClassName="InputExecutionCalculation" syncable="YES" codeGenerationType="class">
+        <attribute name="calculationOperation" optional="YES" attributeType="String"/>
+        <attribute name="outputValueType" optional="YES" attributeType="String"/>
+        <attribute name="valueOne" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="valueTwo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="inputOne" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InputExecution" inverseName="calculationInputOne" inverseEntity="InputExecution"/>
+        <relationship name="inputTwo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InputExecution" inverseName="calculationInputTwo" inverseEntity="InputExecution"/>
+    </entity>
+    <entity name="InputExecutionDatetime" representedClassName="InputExecutionDatetime" parentEntity="InputExecution" syncable="YES" codeGenerationType="class">
+        <attribute name="outputValue" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="InputExecutionLocation" representedClassName="InputExecutionLocation" parentEntity="InputExecution" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="InputExecutionNumber" representedClassName="InputExecutionNumber" parentEntity="InputExecution" syncable="YES" codeGenerationType="class">
+        <attribute name="outputValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="InputExecutionString" representedClassName="InputExecutionString" parentEntity="InputExecution" syncable="YES" codeGenerationType="class">
+        <attribute name="outputValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InputGetLocation" representedClassName="InputGetLocation" parentEntity="Input" syncable="YES" codeGenerationType="class"/>
+    <entity name="InputSetNumber" representedClassName="InputSetNumber" parentEntity="Input" syncable="YES" codeGenerationType="class">
+        <attribute name="currency" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="setValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="InputSetText" representedClassName="InputSetText" parentEntity="Input" syncable="YES" codeGenerationType="class">
+        <attribute name="setValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Trigger" representedClassName="Trigger" syncable="YES" codeGenerationType="class">
+        <attribute name="firstInputID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lastInputID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="triggerOutput" optional="YES" attributeType="String"/>
+        <attribute name="triggerSystemImage" optional="YES" attributeType="String"/>
+        <attribute name="triggerType" optional="YES" attributeType="String"/>
+        <relationship name="actionState" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="triggers" inverseEntity="ActionState"/>
+        <relationship name="executions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Execution" inverseName="trigger" inverseEntity="Execution"/>
+        <relationship name="inputs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Input" inverseName="trigger" inverseEntity="Input"/>
+    </entity>
+</model>

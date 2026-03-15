@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G90" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ActionState" representedClassName=".ActionState" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="collectLocation" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="executionRecords" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ExecutionRecord" inverseName="actionState" inverseEntity="ExecutionRecord"/>
+        <relationship name="inputs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Input" inverseName="actionState" inverseEntity="Input"/>
+        <relationship name="triggers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Trigger" inverseName="actionState" inverseEntity="Trigger"/>
+    </entity>
+    <entity name="AskForNumberInput" representedClassName=".AskForNumberInput" parentEntity="AskForTemplate" syncable="YES">
+        <attribute name="allowDecimals" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="allowNegatives" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="defaultValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="numberValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="outputValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="AskForTemplate" representedClassName=".AskForTemplate" isAbstract="YES" parentEntity="Input" syncable="YES">
+        <attribute name="allowBlank" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="prompt" optional="YES" attributeType="String"/>
+        <attribute name="provideDefault" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="providePrompt" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="AskForTextInput" representedClassName=".AskForTextInput" parentEntity="AskForTemplate" syncable="YES">
+        <attribute name="defaultValue" optional="YES" attributeType="String"/>
+        <attribute name="outputValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CalculateInput" representedClassName=".CalculateInput" parentEntity="Input" syncable="YES">
+        <attribute name="operation" optional="YES" attributeType="String"/>
+        <attribute name="outputValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="nextCalculation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CalculateInput" inverseName="previousCalculation" inverseEntity="CalculateInput"/>
+        <relationship name="previousCalculation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CalculateInput" inverseName="nextCalculation" inverseEntity="CalculateInput"/>
+    </entity>
+    <entity name="ExecutionNumber" representedClassName=".ExecutionNumber" parentEntity="ExecutionRecord" syncable="YES">
+        <attribute name="outputValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ExecutionRecord" representedClassName=".ExecutionRecord" isAbstract="YES" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="executionRecords" inverseEntity="ActionState"/>
+        <relationship name="executionOutput" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="records" inverseEntity="Input"/>
+    </entity>
+    <entity name="ExecutionString" representedClassName=".ExecutionString" parentEntity="ExecutionRecord" syncable="YES">
+        <attribute name="outputValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Input" representedClassName=".Input" isAbstract="YES" syncable="YES">
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inputType" optional="YES" attributeType="String"/>
+        <attribute name="isFirst" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="orderIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="systemImage" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="inputs" inverseEntity="ActionState"/>
+        <relationship name="nextInput" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="previousInput" inverseEntity="Input"/>
+        <relationship name="parentTrigger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trigger" inverseName="childInputs" inverseEntity="Trigger"/>
+        <relationship name="previousInput" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="nextInput" inverseEntity="Input"/>
+        <relationship name="records" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExecutionRecord" inverseName="executionOutput" inverseEntity="ExecutionRecord"/>
+    </entity>
+    <entity name="SetNumberInput" representedClassName=".SetNumberInput" parentEntity="Input" syncable="YES">
+        <attribute name="outputValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="SetTextInput" representedClassName=".SetTextInput" parentEntity="Input" syncable="YES">
+        <attribute name="outputValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Trigger" representedClassName=".Trigger" isAbstract="YES" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="systemImage" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="triggers" inverseEntity="ActionState"/>
+        <relationship name="childInputs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Input" inverseName="parentTrigger" inverseEntity="Input"/>
+    </entity>
+    <entity name="TriggerButton" representedClassName=".TriggerButton" parentEntity="Trigger" syncable="YES">
+        <attribute name="buttonText" optional="YES" attributeType="String"/>
+    </entity>
+</model>

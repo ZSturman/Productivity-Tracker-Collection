@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G90" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ActionState" representedClassName="ActionState" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isAction" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="executions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Execution" inverseName="actionState" inverseEntity="Execution"/>
+        <relationship name="triggers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Trigger" inverseName="actionState" inverseEntity="Trigger"/>
+    </entity>
+    <entity name="Execution" representedClassName="Execution" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="executions" inverseEntity="ActionState"/>
+        <relationship name="inputExecutions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InputExecution" inverseName="execution" inverseEntity="InputExecution"/>
+        <relationship name="trigger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trigger" inverseName="executions" inverseEntity="Trigger"/>
+    </entity>
+    <entity name="Input" representedClassName="Input" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inputOutput" optional="YES" attributeType="String"/>
+        <attribute name="inputType" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="inputExecutions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InputExecution" inverseName="input" inverseEntity="InputExecution"/>
+        <relationship name="trigger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trigger" inverseName="inputs" inverseEntity="Trigger"/>
+    </entity>
+    <entity name="InputExecution" representedClassName="InputExecution" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inputOutput" optional="YES" attributeType="String"/>
+        <relationship name="execution" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Execution" inverseName="inputExecutions" inverseEntity="Execution"/>
+        <relationship name="input" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Input" inverseName="inputExecutions" inverseEntity="Input"/>
+    </entity>
+    <entity name="Trigger" representedClassName="Trigger" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="triggerOutput" optional="YES" attributeType="String"/>
+        <attribute name="triggerType" optional="YES" attributeType="String"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionState" inverseName="triggers" inverseEntity="ActionState"/>
+        <relationship name="executions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Execution" inverseName="trigger" inverseEntity="Execution"/>
+        <relationship name="inputs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Input" inverseName="trigger" inverseEntity="Input"/>
+    </entity>
+</model>

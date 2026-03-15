@@ -1,0 +1,7 @@
+Tracking Data Headers
+1. Date_Time: The date and time at which the test was conducted. This is important if you want to compare performance at different times of the day or on different days.
+2. Test_Type: The type of test that was conducted. Examples might include "Number-Letter Alternation", "Simon Says", or "Card Pair Matching Game".
+3. Score: The score achieved in the test. The meaning of the score will depend on the test type.
+4. Time_Taken: How long it took to complete the test, if applicable. Some tests, like the number-letter alternation task, might record the time taken as the score, in which case this column would be redundant.
+5. Rounds_Completed or Attempts_Made: Depending on the task, you might want to record the number of rounds completed (for a task like Simon Says) or the number of attempts made (for a task like the Card Pair Matching Game).
+6. Notes: Any additional observations or comments about the test. For example, you might note that you were particularly tired when you took the test, or that there were interruptions.

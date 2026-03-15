@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>description</key>
+		<string>This includes the desire for health, fitness, vitality, and the absence of pain or discomfort. It's about maintaining the health and functionality of our physical bodies.</string>
+		<key>name</key>
+		<string>Physical Well-being</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The need for safety and stability in our daily lives, including financial security, health security, and physical safety.</string>
+		<key>name</key>
+		<string>Safety and Security</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for independence and control over our lives, the ability to make choices and decisions for ourselves.</string>
+		<key>name</key>
+		<string>Autonomy</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>We have a deep-rooted desire to be effective in our interactions with the environment. This can also include the need for mastery and understanding in various fields or activities.</string>
+		<key>name</key>
+		<string>Competence</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>This refers to the desire for life to have a sense of purpose, direction, and personal significance.</string>
+		<key>name</key>
+		<string>Purpose and Meaning</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for deep, fulfilling relationships with others. This includes romantic relationships, friendships, and strong family bonds.</string>
+		<key>name</key>
+		<string>Love and Connection</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The need for respect, recognition, and appreciation from others. This also includes self-esteem, or the need for self-respect and self-confidence.</string>
+		<key>name</key>
+		<string>Esteem</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for personal development, learning new skills, and acquiring knowledge.</string>
+		<key>name</key>
+		<string>Growth and Learning</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The need to express our personal ideas, feelings, and identity.</string>
+		<key>name</key>
+		<string>Self-Expression</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to create, to bring something new into existence, to innovate.</string>
+		<key>name</key>
+		<string>Creativity</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to contribute to others, to make a positive impact on the world or the people around us.</string>
+		<key>name</key>
+		<string>Contribution</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for spiritual growth, transcendence, and connection to something greater than oneself. This might also include the need for peace and harmony in life.</string>
+		<key>name</key>
+		<string>Transcendence/Spirituality</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to discover new places, experience new things, and break away from routine.</string>
+		<key>name</key>
+		<string>Adventure and Exploration</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The motivation to accomplish challenging goals, overcome obstacles, and rise to the top in one's field.</string>
+		<key>name</key>
+		<string>Achievement</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The need for amusement, play, and relaxation. This can be a powerful motivator and adds pleasure to life.</string>
+		<key>name</key>
+		<string>Fun and Enjoyment</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to be seen, acknowledged, and valued for our accomplishments, talents, or personal qualities.</string>
+		<key>name</key>
+		<string>Recognition</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to affect others, shape opinions or events, and have a say in the world around us.</string>
+		<key>name</key>
+		<string>Influence</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for structure, routine, predictability, and control in one's life.</string>
+		<key>name</key>
+		<string>Order</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to appreciate, create, or surround oneself with beauty, be it in physical environments, art, music, or personal appearance.</string>
+		<key>name</key>
+		<string>Beauty and Aesthetics</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The need to understand, learn, and make sense of the world around us.</string>
+		<key>name</key>
+		<string>Curiosity</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for new experiences, variety, and change.</string>
+		<key>name</key>
+		<string>Novelty</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to leave something behind, whether it's through one's work, children, or contributions to society.</string>
+		<key>name</key>
+		<string>Legacy</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to be true to oneself, to live in accordance with one's values and beliefs.</string>
+		<key>name</key>
+		<string>Authenticity</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to be honest, consistent, and to behave in accordance with one's principles.</string>
+		<key>name</key>
+		<string>Integrity</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to overcome adversity, to be strong in the face of challenges.</string>
+		<key>name</key>
+		<string>Resilience</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for peace, balance, and cooperation in one's relationships and environment.</string>
+		<key>name</key>
+		<string>Harmony</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to give, to share, to be kind and helpful to others.</string>
+		<key>name</key>
+		<string>Generosity</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to gain insight, understanding, and a deeper perspective on life.</string>
+		<key>name</key>
+		<string>Wisdom</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for a less complicated, more straightforward life. This could involve reducing physical clutter, simplifying relationships, or seeking clarity in one's goals and values.</string>
+		<key>name</key>
+		<string>Simplicity</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to face fear, take risks, and be brave. This could involve stepping out of one's comfort zone, standing up for what one believes in, or facing adversity with strength.</string>
+		<key>name</key>
+		<string>Courage</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to be modest and unassuming, recognizing that there is always more to learn and other perspectives to consider.</string>
+		<key>name</key>
+		<string>Humility</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire for fairness, justice, and equal opportunity. This could manifest as a passion for social justice, a commitment to treating others fairly, or a focus on creating a more equitable society.</string>
+		<key>name</key>
+		<string>Equality</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to be faithful and dependable. This could involve standing by friends and family, staying true to one's commitments, or maintaining allegiance to a cause or organization.</string>
+		<key>name</key>
+		<string>Loyalty</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to empathize with the suffering of others and to help alleviate it. This could involve volunteer work, charitable giving, or simply being there for a friend in need.</string>
+		<key>name</key>
+		<string>Compassion</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to be respected by others, and to show respect for others. This involves recognizing and valuing the worth of all individuals.</string>
+		<key>name</key>
+		<string>Respect</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to accept or tolerate delay, problems, or suffering without becoming annoyed or anxious.</string>
+		<key>name</key>
+		<string>Patience</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to be part of a community, to feel connected, and to fit in.</string>
+		<key>name</key>
+		<string>Belonging</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to live in a way that is environmentally responsible and sustainable for future generations.</string>
+		<key>name</key>
+		<string>Sustainability</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to be regarded in a positive light by others, based on one's actions, accomplishments, or character.</string>
+		<key>name</key>
+		<string>Reputation</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to feel and express appreciation for the good in one's life.</string>
+		<key>name</key>
+		<string>Gratitude</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to feel confident and strong, to have control over one's life, and to be able to achieve one's goals.</string>
+		<key>name</key>
+		<string>Empowerment</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to care for and protect others, helping them to grow and thrive.</string>
+		<key>name</key>
+		<string>Nurturing</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The desire to experience delight and happiness, and to spread these feelings to others.</string>
+		<key>name</key>
+		<string>Joy</string>
+	</dict>
+</array>
+</plist>

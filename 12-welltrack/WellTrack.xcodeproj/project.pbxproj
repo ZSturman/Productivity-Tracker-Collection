@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF08BCA42A8EFF4A00AE41D5 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08BCA32A8EFF4A00AE41D5 /* Input.swift */; };
+		EF1D62F42A96482400216AE9 /* ExecutionDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D62F32A96482400216AE9 /* ExecutionDetailedView.swift */; };
+		EF1D62F82A9655E800216AE9 /* ExecutingInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D62F72A9655E800216AE9 /* ExecutingInputView.swift */; };
+		EF7C39382A8B5265007C642B /* WellTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C39372A8B5265007C642B /* WellTrackApp.swift */; };
+		EF7C393A2A8B5265007C642B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C39392A8B5265007C642B /* ContentView.swift */; };
+		EF7C393C2A8B5266007C642B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7C393B2A8B5266007C642B /* Assets.xcassets */; };
+		EF7C39402A8B5266007C642B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7C393F2A8B5266007C642B /* Preview Assets.xcassets */; };
+		EF7C39482A8B52AD007C642B /* ActionStateCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF7C39462A8B52AD007C642B /* ActionStateCoreData.xcdatamodeld */; };
+		EF7C394B2A8B5337007C642B /* ActionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C394A2A8B5337007C642B /* ActionState.swift */; };
+		EF7C394E2A8B54DF007C642B /* ActionStateDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C394D2A8B54DF007C642B /* ActionStateDataController.swift */; };
+		EF7C39512A8B5569007C642B /* NoActionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C39502A8B5569007C642B /* NoActionStateView.swift */; };
+		EF7C39532A8B5577007C642B /* ActionStateRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C39522A8B5577007C642B /* ActionStateRowView.swift */; };
+		EF7C39552A8B558A007C642B /* ActionStateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C39542A8B558A007C642B /* ActionStateDetailView.swift */; };
+		EF7C39592A8B563F007C642B /* CreateEditActionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C39582A8B563F007C642B /* CreateEditActionState.swift */; };
+		EF7C395B2A8B5656007C642B /* ActionStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C395A2A8B5656007C642B /* ActionStateViewModel.swift */; };
+		EF7C396A2A8B7573007C642B /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C39692A8B7573007C642B /* ModelTests.swift */; };
+		EF94E3B62A9220C70094D113 /* InputOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF94E3B52A9220C70094D113 /* InputOptions.swift */; };
+		EFB602EF2A90D021001F8D3C /* OutputListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB602EE2A90D021001F8D3C /* OutputListView.swift */; };
+		EFB602F32A90D703001F8D3C /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB602F22A90D703001F8D3C /* Trigger.swift */; };
+		EFBE3E6D2A91827100B6282C /* ExecutionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3E6C2A91827100B6282C /* ExecutionRecord.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF7C39642A8B74EB007C642B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7C392C2A8B5265007C642B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7C39332A8B5265007C642B;
+			remoteInfo = WellTrack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF08BCA32A8EFF4A00AE41D5 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		EF1D62F32A96482400216AE9 /* ExecutionDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionDetailedView.swift; sourceTree = "<group>"; };
+		EF1D62F72A9655E800216AE9 /* ExecutingInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutingInputView.swift; sourceTree = "<group>"; };
+		EF59E59F2A8B81CF00B3704F /* WellTrack.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = WellTrack.xctestplan; sourceTree = "<group>"; };
+		EF7C39342A8B5265007C642B /* WellTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7C39372A8B5265007C642B /* WellTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellTrackApp.swift; sourceTree = "<group>"; };
+		EF7C39392A8B5265007C642B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF7C393B2A8B5266007C642B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7C393D2A8B5266007C642B /* WellTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WellTrack.entitlements; sourceTree = "<group>"; };
+		EF7C393F2A8B5266007C642B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF7C39472A8B52AD007C642B /* WellTrackCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WellTrackCoreData.xcdatamodel; sourceTree = "<group>"; };
+		EF7C394A2A8B5337007C642B /* ActionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionState.swift; sourceTree = "<group>"; };
+		EF7C394D2A8B54DF007C642B /* ActionStateDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateDataController.swift; sourceTree = "<group>"; };
+		EF7C39502A8B5569007C642B /* NoActionStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoActionStateView.swift; sourceTree = "<group>"; };
+		EF7C39522A8B5577007C642B /* ActionStateRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateRowView.swift; sourceTree = "<group>"; };
+		EF7C39542A8B558A007C642B /* ActionStateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateDetailView.swift; sourceTree = "<group>"; };
+		EF7C39582A8B563F007C642B /* CreateEditActionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditActionState.swift; sourceTree = "<group>"; };
+		EF7C395A2A8B5656007C642B /* ActionStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateViewModel.swift; sourceTree = "<group>"; };
+		EF7C39602A8B74EB007C642B /* WellTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7C39692A8B7573007C642B /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		EF94E3B52A9220C70094D113 /* InputOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOptions.swift; sourceTree = "<group>"; };
+		EFB602EE2A90D021001F8D3C /* OutputListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputListView.swift; sourceTree = "<group>"; };
+		EFB602F22A90D703001F8D3C /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
+		EFBE3E6C2A91827100B6282C /* ExecutionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionRecord.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF7C39312A8B5265007C642B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7C395D2A8B74EB007C642B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF7C392B2A8B5265007C642B = {
+			isa = PBXGroup;
+			children = (
+				EF59E59F2A8B81CF00B3704F /* WellTrack.xctestplan */,
+				EF7C39362A8B5265007C642B /* WellTrack */,
+				EF7C39612A8B74EB007C642B /* WellTrackTests */,
+				EF7C39352A8B5265007C642B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF7C39352A8B5265007C642B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C39342A8B5265007C642B /* WellTrack.app */,
+				EF7C39602A8B74EB007C642B /* WellTrackTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7C39362A8B5265007C642B /* WellTrack */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C39372A8B5265007C642B /* WellTrackApp.swift */,
+				EF7C394F2A8B5552007C642B /* Views */,
+				EF7C394C2A8B54AF007C642B /* Data */,
+				EF7C39492A8B5325007C642B /* Models */,
+				EF7C393B2A8B5266007C642B /* Assets.xcassets */,
+				EF7C393D2A8B5266007C642B /* WellTrack.entitlements */,
+				EF7C393E2A8B5266007C642B /* Preview Content */,
+			);
+			path = WellTrack;
+			sourceTree = "<group>";
+		};
+		EF7C393E2A8B5266007C642B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C393F2A8B5266007C642B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF7C39492A8B5325007C642B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C395A2A8B5656007C642B /* ActionStateViewModel.swift */,
+				EF7C394A2A8B5337007C642B /* ActionState.swift */,
+				EFB602F22A90D703001F8D3C /* Trigger.swift */,
+				EF08BCA32A8EFF4A00AE41D5 /* Input.swift */,
+				EFBE3E6C2A91827100B6282C /* ExecutionRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF7C394C2A8B54AF007C642B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C394D2A8B54DF007C642B /* ActionStateDataController.swift */,
+				EF7C39462A8B52AD007C642B /* ActionStateCoreData.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EF7C394F2A8B5552007C642B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C39392A8B5265007C642B /* ContentView.swift */,
+				EF7C39522A8B5577007C642B /* ActionStateRowView.swift */,
+				EF1D62F72A9655E800216AE9 /* ExecutingInputView.swift */,
+				EF7C39502A8B5569007C642B /* NoActionStateView.swift */,
+				EF7C39542A8B558A007C642B /* ActionStateDetailView.swift */,
+				EF7C39582A8B563F007C642B /* CreateEditActionState.swift */,
+				EF94E3B52A9220C70094D113 /* InputOptions.swift */,
+				EFB602EE2A90D021001F8D3C /* OutputListView.swift */,
+				EF1D62F32A96482400216AE9 /* ExecutionDetailedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF7C39612A8B74EB007C642B /* WellTrackTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C39692A8B7573007C642B /* ModelTests.swift */,
+			);
+			path = WellTrackTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF7C39332A8B5265007C642B /* WellTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7C39432A8B5266007C642B /* Build configuration list for PBXNativeTarget "WellTrack" */;
+			buildPhases = (
+				EF7C39302A8B5265007C642B /* Sources */,
+				EF7C39312A8B5265007C642B /* Frameworks */,
+				EF7C39322A8B5265007C642B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WellTrack;
+			productName = WellTrack;
+			productReference = EF7C39342A8B5265007C642B /* WellTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF7C395F2A8B74EB007C642B /* WellTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7C39662A8B74EB007C642B /* Build configuration list for PBXNativeTarget "WellTrackTests" */;
+			buildPhases = (
+				EF7C395C2A8B74EB007C642B /* Sources */,
+				EF7C395D2A8B74EB007C642B /* Frameworks */,
+				EF7C395E2A8B74EB007C642B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7C39652A8B74EB007C642B /* PBXTargetDependency */,
+			);
+			name = WellTrackTests;
+			productName = WellTrackTests;
+			productReference = EF7C39602A8B74EB007C642B /* WellTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF7C392C2A8B5265007C642B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EF7C39332A8B5265007C642B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					EF7C395F2A8B74EB007C642B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EF7C39332A8B5265007C642B;
+					};
+				};
+			};
+			buildConfigurationList = EF7C392F2A8B5265007C642B /* Build configuration list for PBXProject "WellTrack" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF7C392B2A8B5265007C642B;
+			productRefGroup = EF7C39352A8B5265007C642B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF7C39332A8B5265007C642B /* WellTrack */,
+				EF7C395F2A8B74EB007C642B /* WellTrackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF7C39322A8B5265007C642B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7C39402A8B5266007C642B /* Preview Assets.xcassets in Resources */,
+				EF7C393C2A8B5266007C642B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7C395E2A8B74EB007C642B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF7C39302A8B5265007C642B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7C39482A8B52AD007C642B /* ActionStateCoreData.xcdatamodeld in Sources */,
+				EF1D62F42A96482400216AE9 /* ExecutionDetailedView.swift in Sources */,
+				EF7C393A2A8B5265007C642B /* ContentView.swift in Sources */,
+				EF7C39592A8B563F007C642B /* CreateEditActionState.swift in Sources */,
+				EFBE3E6D2A91827100B6282C /* ExecutionRecord.swift in Sources */,
+				EFB602EF2A90D021001F8D3C /* OutputListView.swift in Sources */,
+				EF7C394E2A8B54DF007C642B /* ActionStateDataController.swift in Sources */,
+				EF94E3B62A9220C70094D113 /* InputOptions.swift in Sources */,
+				EF7C395B2A8B5656007C642B /* ActionStateViewModel.swift in Sources */,
+				EF08BCA42A8EFF4A00AE41D5 /* Input.swift in Sources */,
+				EF7C39552A8B558A007C642B /* ActionStateDetailView.swift in Sources */,
+				EF1D62F82A9655E800216AE9 /* ExecutingInputView.swift in Sources */,
+				EF7C39512A8B5569007C642B /* NoActionStateView.swift in Sources */,
+				EF7C39532A8B5577007C642B /* ActionStateRowView.swift in Sources */,
+				EF7C39382A8B5265007C642B /* WellTrackApp.swift in Sources */,
+				EFB602F32A90D703001F8D3C /* Trigger.swift in Sources */,
+				EF7C394B2A8B5337007C642B /* ActionState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7C395C2A8B74EB007C642B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7C396A2A8B7573007C642B /* ModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF7C39652A8B74EB007C642B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7C39332A8B5265007C642B /* WellTrack */;
+			targetProxy = EF7C39642A8B74EB007C642B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF7C39412A8B5266007C642B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF7C39422A8B5266007C642B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EF7C39442A8B5266007C642B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WellTrack/WellTrack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WellTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = MF8J7AY2X3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsdynamics.WellTrack222;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7C39452A8B5266007C642B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WellTrack/WellTrack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WellTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = MF8J7AY2X3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsdynamics.WellTrack222;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF7C39672A8B74EB007C642B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MF8J7AY2X3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsdynamics.WellTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellTrack";
+			};
+			name = Debug;
+		};
+		EF7C39682A8B74EB007C642B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MF8J7AY2X3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsdynamics.WellTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellTrack";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7C392F2A8B5265007C642B /* Build configuration list for PBXProject "WellTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7C39412A8B5266007C642B /* Debug */,
+				EF7C39422A8B5266007C642B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7C39432A8B5266007C642B /* Build configuration list for PBXNativeTarget "WellTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7C39442A8B5266007C642B /* Debug */,
+				EF7C39452A8B5266007C642B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7C39662A8B74EB007C642B /* Build configuration list for PBXNativeTarget "WellTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7C39672A8B74EB007C642B /* Debug */,
+				EF7C39682A8B74EB007C642B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF7C39462A8B52AD007C642B /* ActionStateCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF7C39472A8B52AD007C642B /* WellTrackCoreData.xcdatamodel */,
+			);
+			currentVersion = EF7C39472A8B52AD007C642B /* WellTrackCoreData.xcdatamodel */;
+			path = ActionStateCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF7C392C2A8B5265007C642B /* Project object */;
+}

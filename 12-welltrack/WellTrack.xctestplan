@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "92D1557F-4724-47BD-B51F-B0697953841C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:WellTrack.xcodeproj",
+      "identifier" : "EF7C39332A8B5265007C642B",
+      "name" : "WellTrack"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:WellTrack.xcodeproj",
+        "identifier" : "EF7C395F2A8B74EB007C642B",
+        "name" : "WellTrackTests"
+      }
+    }
+  ],
+  "version" : 1
+}

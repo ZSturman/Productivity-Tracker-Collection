@@ -1,0 +1,68 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+build/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+.venv/
+env/
+.env/
+**/pyvenv.cfg
+**/pyvenv 2.cfg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Xcode user-specific state
+*.xcuserstate
+
+# Local databases and runtime output
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Embedded local Python environments accidentally created inside the repo
+03-pyqt-productivity-suite/pyqt_app1/
+09-eye-tracking-ml/ml_eyes/eyes/
+
+# Project-specific runtime artifacts
+07-macos-activity-tracker/logs/*
+09-eye-tracking-ml/*.avi
+09-eye-tracking-ml/timestamps.csv
+09-eye-tracking-ml/..screenshot*
+
+# Generated artifacts (large binary files)
+# Uncomment the lines below if you want to exclude large generated files from the repo:
+# *.avi
+# *.mp4
+# *.mov

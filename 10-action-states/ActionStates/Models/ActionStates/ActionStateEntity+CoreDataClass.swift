@@ -1,0 +1,15 @@
+//
+//  ActionStateEntity+CoreDataClass.swift
+//  ActionStates
+//
+//  Created by Zachary Sturman on 7/25/23.
+//
+//
+
+import Foundation
+import CoreData
+
+@objc(ActionStateEntity)
+public class ActionStateEntity: NSManagedObject {
+
+}

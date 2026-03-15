@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF19DC9D2A99C04000340B6F /* NoActionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DC9C2A99C04000340B6F /* NoActionStateView.swift */; };
+		EF19DCA72A99C61700340B6F /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCA62A99C61700340B6F /* HomeScreenView.swift */; };
+		EF19DCA92A99C63500340B6F /* CreateEditActionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCA82A99C63500340B6F /* CreateEditActionStateView.swift */; };
+		EF19DCAB2A99C64700340B6F /* ActionStateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCAA2A99C64700340B6F /* ActionStateListView.swift */; };
+		EF19DCAD2A99C65E00340B6F /* ActionStateRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCAC2A99C65E00340B6F /* ActionStateRowView.swift */; };
+		EF19DCAF2A99C66B00340B6F /* ActionStateDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCAE2A99C66B00340B6F /* ActionStateDetailedView.swift */; };
+		EF19DCB32A99E15600340B6F /* ExecutionDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCB22A99E15600340B6F /* ExecutionDetailedView.swift */; };
+		EF19DCB72A99F61D00340B6F /* ActionStateDetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCB62A99F61D00340B6F /* ActionStateDetailedViewModel.swift */; };
+		EF19DCBB2A99FBA000340B6F /* ActionStateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCBA2A99FBA000340B6F /* ActionStateListViewModel.swift */; };
+		EF19DCBD2A99FC1C00340B6F /* CreateEditActionStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19DCBC2A99FC1C00340B6F /* CreateEditActionStateViewModel.swift */; };
+		EF2784D62A9F1FD200CC4E5D /* InputExecutionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2784D52A9F1FD200CC4E5D /* InputExecutionVM.swift */; };
+		EF2784D82A9F30E800CC4E5D /* ExecutionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2784D72A9F30E800CC4E5D /* ExecutionVM.swift */; };
+		EF2784DA2A9F38C900CC4E5D /* NewHomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2784D92A9F38C900CC4E5D /* NewHomeScreenView.swift */; };
+		EF2784DE2A9F398300CC4E5D /* ActionStateListViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2784DD2A9F398300CC4E5D /* ActionStateListViewNew.swift */; };
+		EF2784E02A9F3BEE00CC4E5D /* CreateEditActionStateViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2784DF2A9F3BEE00CC4E5D /* CreateEditActionStateViewNew.swift */; };
+		EF2784E22A9F41C600CC4E5D /* ActionStateDetailedViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2784E12A9F41C600CC4E5D /* ActionStateDetailedViewNew.swift */; };
+		EF29B2E72A9D9FF600DE3EE4 /* ActionStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29B2E62A9D9FF600DE3EE4 /* ActionStateModel.swift */; };
+		EF29B2E92A9DA00E00DE3EE4 /* InputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29B2E82A9DA00E00DE3EE4 /* InputModel.swift */; };
+		EF29B2EB2A9DA02D00DE3EE4 /* TriggerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29B2EA2A9DA02D00DE3EE4 /* TriggerModel.swift */; };
+		EF29B2ED2A9DA04300DE3EE4 /* ExecutionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29B2EC2A9DA04300DE3EE4 /* ExecutionModel.swift */; };
+		EF29B2EF2A9DA30500DE3EE4 /* InputExecutionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29B2EE2A9DA30500DE3EE4 /* InputExecutionViews.swift */; };
+		EF29B2F12A9DA91F00DE3EE4 /* ExecutionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29B2F02A9DA91F00DE3EE4 /* ExecutionViewModel.swift */; };
+		EFBB987F2A997F6D002DA917 /* TrackwellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB987E2A997F6D002DA917 /* TrackwellApp.swift */; };
+		EFBB98812A997F6D002DA917 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB98802A997F6D002DA917 /* ContentView.swift */; };
+		EFBB98832A997F6F002DA917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBB98822A997F6F002DA917 /* Assets.xcassets */; };
+		EFBB98872A997F6F002DA917 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBB98862A997F6F002DA917 /* Preview Assets.xcassets */; };
+		EFBFC9132A9A64D7001A573F /* TriggerOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFC9122A9A64D7001A573F /* TriggerOptionsView.swift */; };
+		EFBFC9152A9A64F0001A573F /* InputOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFC9142A9A64F0001A573F /* InputOptionsView.swift */; };
+		EFBFC9172A9A67C3001A573F /* ActionStateRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFC9162A9A67C3001A573F /* ActionStateRowViewModel.swift */; };
+		EFE806112A9F1B190056B744 /* ActionStateListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE806102A9F1B190056B744 /* ActionStateListVM.swift */; };
+		EFE806132A9F1B240056B744 /* ActionStateVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE806122A9F1B240056B744 /* ActionStateVM.swift */; };
+		EFE806152A9F1B2E0056B744 /* TriggerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE806142A9F1B2E0056B744 /* TriggerVM.swift */; };
+		EFE806172A9F1B380056B744 /* InputVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE806162A9F1B380056B744 /* InputVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF19DC9C2A99C04000340B6F /* NoActionStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoActionStateView.swift; sourceTree = "<group>"; };
+		EF19DCA62A99C61700340B6F /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		EF19DCA82A99C63500340B6F /* CreateEditActionStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditActionStateView.swift; sourceTree = "<group>"; };
+		EF19DCAA2A99C64700340B6F /* ActionStateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateListView.swift; sourceTree = "<group>"; };
+		EF19DCAC2A99C65E00340B6F /* ActionStateRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateRowView.swift; sourceTree = "<group>"; };
+		EF19DCAE2A99C66B00340B6F /* ActionStateDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateDetailedView.swift; sourceTree = "<group>"; };
+		EF19DCB22A99E15600340B6F /* ExecutionDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionDetailedView.swift; sourceTree = "<group>"; };
+		EF19DCB62A99F61D00340B6F /* ActionStateDetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateDetailedViewModel.swift; sourceTree = "<group>"; };
+		EF19DCBA2A99FBA000340B6F /* ActionStateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateListViewModel.swift; sourceTree = "<group>"; };
+		EF19DCBC2A99FC1C00340B6F /* CreateEditActionStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditActionStateViewModel.swift; sourceTree = "<group>"; };
+		EF2784D52A9F1FD200CC4E5D /* InputExecutionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputExecutionVM.swift; sourceTree = "<group>"; };
+		EF2784D72A9F30E800CC4E5D /* ExecutionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionVM.swift; sourceTree = "<group>"; };
+		EF2784D92A9F38C900CC4E5D /* NewHomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeScreenView.swift; sourceTree = "<group>"; };
+		EF2784DD2A9F398300CC4E5D /* ActionStateListViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateListViewNew.swift; sourceTree = "<group>"; };
+		EF2784DF2A9F3BEE00CC4E5D /* CreateEditActionStateViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditActionStateViewNew.swift; sourceTree = "<group>"; };
+		EF2784E12A9F41C600CC4E5D /* ActionStateDetailedViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateDetailedViewNew.swift; sourceTree = "<group>"; };
+		EF29B2E62A9D9FF600DE3EE4 /* ActionStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateModel.swift; sourceTree = "<group>"; };
+		EF29B2E82A9DA00E00DE3EE4 /* InputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModel.swift; sourceTree = "<group>"; };
+		EF29B2EA2A9DA02D00DE3EE4 /* TriggerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerModel.swift; sourceTree = "<group>"; };
+		EF29B2EC2A9DA04300DE3EE4 /* ExecutionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionModel.swift; sourceTree = "<group>"; };
+		EF29B2EE2A9DA30500DE3EE4 /* InputExecutionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputExecutionViews.swift; sourceTree = "<group>"; };
+		EF29B2F02A9DA91F00DE3EE4 /* ExecutionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionViewModel.swift; sourceTree = "<group>"; };
+		EFBB987B2A997F6D002DA917 /* Trackwell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackwell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBB987E2A997F6D002DA917 /* TrackwellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackwellApp.swift; sourceTree = "<group>"; };
+		EFBB98802A997F6D002DA917 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFBB98822A997F6F002DA917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFBB98842A997F6F002DA917 /* Trackwell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trackwell.entitlements; sourceTree = "<group>"; };
+		EFBB98862A997F6F002DA917 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFBFC9122A9A64D7001A573F /* TriggerOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerOptionsView.swift; sourceTree = "<group>"; };
+		EFBFC9142A9A64F0001A573F /* InputOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOptionsView.swift; sourceTree = "<group>"; };
+		EFBFC9162A9A67C3001A573F /* ActionStateRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateRowViewModel.swift; sourceTree = "<group>"; };
+		EFE806102A9F1B190056B744 /* ActionStateListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateListVM.swift; sourceTree = "<group>"; };
+		EFE806122A9F1B240056B744 /* ActionStateVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStateVM.swift; sourceTree = "<group>"; };
+		EFE806142A9F1B2E0056B744 /* TriggerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerVM.swift; sourceTree = "<group>"; };
+		EFE806162A9F1B380056B744 /* InputVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFBB98782A997F6D002DA917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF19DCA32A99C5EE00340B6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF29B2E62A9D9FF600DE3EE4 /* ActionStateModel.swift */,
+				EF29B2EA2A9DA02D00DE3EE4 /* TriggerModel.swift */,
+				EF29B2E82A9DA00E00DE3EE4 /* InputModel.swift */,
+				EF29B2EC2A9DA04300DE3EE4 /* ExecutionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF2784DB2A9F38D300CC4E5D /* NewViews */ = {
+			isa = PBXGroup;
+			children = (
+				EF2784D92A9F38C900CC4E5D /* NewHomeScreenView.swift */,
+				EF2784DD2A9F398300CC4E5D /* ActionStateListViewNew.swift */,
+				EF2784E12A9F41C600CC4E5D /* ActionStateDetailedViewNew.swift */,
+				EF2784DF2A9F3BEE00CC4E5D /* CreateEditActionStateViewNew.swift */,
+			);
+			path = NewViews;
+			sourceTree = "<group>";
+		};
+		EF2784DC2A9F38E000CC4E5D /* NewVMs */ = {
+			isa = PBXGroup;
+			children = (
+				EFE806102A9F1B190056B744 /* ActionStateListVM.swift */,
+				EFE806122A9F1B240056B744 /* ActionStateVM.swift */,
+				EFE806142A9F1B2E0056B744 /* TriggerVM.swift */,
+				EF2784D72A9F30E800CC4E5D /* ExecutionVM.swift */,
+				EF2784D52A9F1FD200CC4E5D /* InputExecutionVM.swift */,
+				EFE806162A9F1B380056B744 /* InputVM.swift */,
+			);
+			path = NewVMs;
+			sourceTree = "<group>";
+		};
+		EFBB98722A997F6D002DA917 = {
+			isa = PBXGroup;
+			children = (
+				EFBB987D2A997F6D002DA917 /* Trackwell */,
+				EFBB987C2A997F6D002DA917 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFBB987C2A997F6D002DA917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFBB987B2A997F6D002DA917 /* Trackwell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFBB987D2A997F6D002DA917 /* Trackwell */ = {
+			isa = PBXGroup;
+			children = (
+				EF2784DC2A9F38E000CC4E5D /* NewVMs */,
+				EF2784DB2A9F38D300CC4E5D /* NewViews */,
+				EF19DCA32A99C5EE00340B6F /* Models */,
+				EFBB989B2A998080002DA917 /* Views */,
+				EFBB989A2A99806F002DA917 /* ViewModels */,
+				EFBB987E2A997F6D002DA917 /* TrackwellApp.swift */,
+				EFBB98802A997F6D002DA917 /* ContentView.swift */,
+				EFBB98822A997F6F002DA917 /* Assets.xcassets */,
+				EFBB98842A997F6F002DA917 /* Trackwell.entitlements */,
+				EFBB98852A997F6F002DA917 /* Preview Content */,
+			);
+			path = Trackwell;
+			sourceTree = "<group>";
+		};
+		EFBB98852A997F6F002DA917 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFBB98862A997F6F002DA917 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFBB989A2A99806F002DA917 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF19DCBA2A99FBA000340B6F /* ActionStateListViewModel.swift */,
+				EFBFC9162A9A67C3001A573F /* ActionStateRowViewModel.swift */,
+				EF19DCB62A99F61D00340B6F /* ActionStateDetailedViewModel.swift */,
+				EF29B2F02A9DA91F00DE3EE4 /* ExecutionViewModel.swift */,
+				EF19DCBC2A99FC1C00340B6F /* CreateEditActionStateViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EFBB989B2A998080002DA917 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF19DCA62A99C61700340B6F /* HomeScreenView.swift */,
+				EF19DC9C2A99C04000340B6F /* NoActionStateView.swift */,
+				EF19DCAA2A99C64700340B6F /* ActionStateListView.swift */,
+				EF19DCA82A99C63500340B6F /* CreateEditActionStateView.swift */,
+				EF19DCAC2A99C65E00340B6F /* ActionStateRowView.swift */,
+				EF19DCAE2A99C66B00340B6F /* ActionStateDetailedView.swift */,
+				EF19DCB22A99E15600340B6F /* ExecutionDetailedView.swift */,
+				EFBFC9122A9A64D7001A573F /* TriggerOptionsView.swift */,
+				EFBFC9142A9A64F0001A573F /* InputOptionsView.swift */,
+				EF29B2EE2A9DA30500DE3EE4 /* InputExecutionViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFBB987A2A997F6D002DA917 /* Trackwell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFBB988A2A997F6F002DA917 /* Build configuration list for PBXNativeTarget "Trackwell" */;
+			buildPhases = (
+				EFBB98772A997F6D002DA917 /* Sources */,
+				EFBB98782A997F6D002DA917 /* Frameworks */,
+				EFBB98792A997F6D002DA917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trackwell;
+			productName = Trackwell;
+			productReference = EFBB987B2A997F6D002DA917 /* Trackwell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFBB98732A997F6D002DA917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EFBB987A2A997F6D002DA917 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EFBB98762A997F6D002DA917 /* Build configuration list for PBXProject "Trackwell" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFBB98722A997F6D002DA917;
+			productRefGroup = EFBB987C2A997F6D002DA917 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFBB987A2A997F6D002DA917 /* Trackwell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFBB98792A997F6D002DA917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBB98872A997F6F002DA917 /* Preview Assets.xcassets in Resources */,
+				EFBB98832A997F6F002DA917 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFBB98772A997F6D002DA917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF19DCBD2A99FC1C00340B6F /* CreateEditActionStateViewModel.swift in Sources */,
+				EFE806152A9F1B2E0056B744 /* TriggerVM.swift in Sources */,
+				EF2784D62A9F1FD200CC4E5D /* InputExecutionVM.swift in Sources */,
+				EF19DCB72A99F61D00340B6F /* ActionStateDetailedViewModel.swift in Sources */,
+				EF29B2E72A9D9FF600DE3EE4 /* ActionStateModel.swift in Sources */,
+				EFE806132A9F1B240056B744 /* ActionStateVM.swift in Sources */,
+				EF2784E22A9F41C600CC4E5D /* ActionStateDetailedViewNew.swift in Sources */,
+				EF19DCBB2A99FBA000340B6F /* ActionStateListViewModel.swift in Sources */,
+				EF2784E02A9F3BEE00CC4E5D /* CreateEditActionStateViewNew.swift in Sources */,
+				EF19DC9D2A99C04000340B6F /* NoActionStateView.swift in Sources */,
+				EF29B2EB2A9DA02D00DE3EE4 /* TriggerModel.swift in Sources */,
+				EFE806112A9F1B190056B744 /* ActionStateListVM.swift in Sources */,
+				EF29B2EF2A9DA30500DE3EE4 /* InputExecutionViews.swift in Sources */,
+				EFE806172A9F1B380056B744 /* InputVM.swift in Sources */,
+				EF2784DE2A9F398300CC4E5D /* ActionStateListViewNew.swift in Sources */,
+				EFBB98812A997F6D002DA917 /* ContentView.swift in Sources */,
+				EF29B2E92A9DA00E00DE3EE4 /* InputModel.swift in Sources */,
+				EF2784D82A9F30E800CC4E5D /* ExecutionVM.swift in Sources */,
+				EF19DCA72A99C61700340B6F /* HomeScreenView.swift in Sources */,
+				EF19DCA92A99C63500340B6F /* CreateEditActionStateView.swift in Sources */,
+				EF19DCAB2A99C64700340B6F /* ActionStateListView.swift in Sources */,
+				EFBFC9152A9A64F0001A573F /* InputOptionsView.swift in Sources */,
+				EF29B2ED2A9DA04300DE3EE4 /* ExecutionModel.swift in Sources */,
+				EF2784DA2A9F38C900CC4E5D /* NewHomeScreenView.swift in Sources */,
+				EF19DCB32A99E15600340B6F /* ExecutionDetailedView.swift in Sources */,
+				EF29B2F12A9DA91F00DE3EE4 /* ExecutionViewModel.swift in Sources */,
+				EF19DCAD2A99C65E00340B6F /* ActionStateRowView.swift in Sources */,
+				EFBFC9132A9A64D7001A573F /* TriggerOptionsView.swift in Sources */,
+				EFBB987F2A997F6D002DA917 /* TrackwellApp.swift in Sources */,
+				EF19DCAF2A99C66B00340B6F /* ActionStateDetailedView.swift in Sources */,
+				EFBFC9172A9A67C3001A573F /* ActionStateRowViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EFBB98882A997F6F002DA917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFBB98892A997F6F002DA917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EFBB988B2A997F6F002DA917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trackwell/Trackwell.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trackwell/Preview Content\"";
+				DEVELOPMENT_TEAM = MF8J7AY2X3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsdynamics.Trackwell22;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFBB988C2A997F6F002DA917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trackwell/Trackwell.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trackwell/Preview Content\"";
+				DEVELOPMENT_TEAM = MF8J7AY2X3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsdynamics.Trackwell22;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFBB98762A997F6D002DA917 /* Build configuration list for PBXProject "Trackwell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBB98882A997F6F002DA917 /* Debug */,
+				EFBB98892A997F6F002DA917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFBB988A2A997F6F002DA917 /* Build configuration list for PBXNativeTarget "Trackwell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBB988B2A997F6F002DA917 /* Debug */,
+				EFBB988C2A997F6F002DA917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFBB98732A997F6D002DA917 /* Project object */;
+}

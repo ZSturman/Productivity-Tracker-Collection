@@ -1,0 +1,8 @@
+Add in 'Remove Task/ Milestone and Deliverable' btns as well as the functionality 
+- Remove from os, project_json, csv's
+
+Add view and edits abilities task and stuff
+
+Add in the ability to add a to do list as well as functionality to easy check them off
+
+Find way to separate out completed from non completed 

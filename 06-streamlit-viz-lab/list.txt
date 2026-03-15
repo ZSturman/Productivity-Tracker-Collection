@@ -1,0 +1,222 @@
+
+|-use_case
+    |- category 
+        |- genre
+|- goal_type
+    |- goal
+|- time_period
+    |- priority
+
+
+
+
+
+
+use_case = ['Goal tracking', 'Habit tracking', 'Project management', 'Self-improvement', 'Time management', 'Productivity']
+
+category = ['Health', 'Wealth', 'Relationship', 'Career', 'Personal Growth', 'Spirituality', 'Social Life', 'Family', 'Fun & Recreation', 'Contribution']
+
+
+
+goal_type = ['Habit', 'Project', 'Event']
+
+goal = ['Learn', 'Do', 'Be']
+
+
+time_period = ['By end of the week', 'By end of the month', 'By end of the year', 'By end of the decade', 'Before I die']
+
+priority = ['High', 'Medium', 'Low']
+
+
+
+
+Tasks: 
+genre = ['Creative', 'Analytical', 'Physical', 'Social', 'Adventurous', 'Intellectual', 'Emotional', 'Spiritual', 'Financial', 'Environmental', 'Occupational', 'Relationship', 'Health']
+
+time_period = ['By end of the week', 'By end of the month', 'By end of the year', 'By end of the decade', 'Before I die']
+
+priority = ['High', 'Medium', 'Low']
+
+task_type = ['Habit', 'Project', 'Event']
+
+task = ['Learn', 'Do', 'Be']
+
+
+
+Per Task:
+
+platform = ['Web', 'iOS', 'Android', 'Mac', 'Windows', 'Linux', 'Cross-platform', 'Command Line']
+
+device = ['Phone', 'Tablet', 'Laptop', 'Desktop', 'Smartwatch']
+
+language = ['Python', 'JavaScript', 'Java', 'C', 'C++', 'C#', 'PHP', 'Ruby', 'Go', 'Swift', 'Kotlin', 'Rust', 'TypeScript']
+
+framework = ['Python', 'JavaScript', 'React', 'Vue', 'Angular', 'Django', 'Flask', 'Node.js', 'Express', 'Ruby on Rails', 'Laravel', 'Spring', 'Flask', 'Django', 'Rails']
+
+target_audience = ['Students', 'Professionals', 'Entrepreneurs', 'Parents', 'Self-employed', 'Self-learners', 'People in need']
+
+medium = ['Book', 'Article', 'Video', 'Podcast', 'Documentary', 'Movie', 'TV Show', 'Course']
+
+task_status = ['Not Started', 'In Progress', 'Completed', 'Abandoned']
+
+task_relationship = ['Parent', 'Sibling', 'Friend']
+
+topic = ['Personal Development', 'Education', 'Career', 'Health', 'Relationships', 'Wealth', 'Spirituality', 'Social Life', 'Family', 'Fun & Recreation', 'Contribution']
+
+
+
+Creative:
+a. Artistic
+b. Design
+c. Writing
+d. Music
+e. Performance
+f. Film/Video
+g. Photography
+
+Educational:
+a. Science
+b. Mathematics
+c. History
+d. Social Studies
+e. Language
+f. Technology
+g. Arts
+
+Business:
+a. Finance
+b. Marketing
+c. Sales
+d. Operations
+e. Human Resources
+f. Management
+g. Entrepreneurship
+
+Technology:
+a. Programming
+b. Web Development
+c. Mobile Development
+d. Data Science
+e. Artificial Intelligence
+f. Cybersecurity
+g. Networking
+
+Social Impact:
+a. Environmental
+b. Humanitarian
+c. Health
+d. Community Development
+e. Social Justice
+f. Advocacy
+g. Nonprofit
+
+Lifestyle:
+a. Health & Fitness
+b. Food & Cooking
+c. Fashion & Beauty
+d. Home & Garden
+e. Travel & Adventure
+f. Relationships
+g. Personal Development
+
+Entertainment:
+a. Gaming
+b. Sports
+c. Humor
+d. Television & Film
+e. Pop Culture
+f. Hobbies
+g. Events
+
+
+
+
+
+To-do list genre
+
+Personal:
+a. Health & Fitness
+b. Self-care
+c. Hobbies & Interests
+d. Personal Finance
+e. Spirituality & Mindfulness
+f. Personal Development
+g. Relationships
+
+Professional:
+a. Work Tasks
+b. Networking
+c. Professional Development
+d. Career Planning
+e. Job Search
+f. Collaboration & Meetings
+g. Project Management
+
+Household:
+a. Cleaning & Maintenance
+b. Home Improvement
+c. Gardening & Landscaping
+d. Cooking & Meal Planning
+e. Shopping & Errands
+f. Organizing & Decluttering
+g. Budgeting & Bills
+
+Social:
+a. Family & Friends
+b. Events & Celebrations
+c. Volunteering & Community
+d. Travel & Outings
+e. Communication & Catch-ups
+f. Group Activities
+g. Gift-Giving & Thank Yous
+
+Educational:
+a. Reading & Research
+b. Online Courses & Webinars
+c. Workshops & Conferences
+d. Study & Homework
+e. Skill Development
+f. Language Learning
+g. Academic Planning
+
+Digital:
+a. Email & Messaging
+b. Social Media
+c. File Management & Backup
+d. Software & App Updates
+e. Online Security
+f. Device Maintenance
+g. Digital Content Creation
+
+Administrative:
+a. Paperwork & Documentation
+b. Appointments & Scheduling
+c. Legal Matters
+d. Taxes & Financial Reporting
+e. Insurance & Licenses
+f. Registrations & Renewals
+g. Record-Keeping & Archiving
+
+
+
+Category:
+
+programming
+productivity
+goal management
+task management
+Genre:
+
+tutorial
+project planning
+time management
+personal development
+
+
+
+Framework: Python
+Difficulty Level: beginner
+Target Audience: students, professionals, self-learners
+Use Case: goal tracking, time management, self-improvement
+Topic: object-oriented programming, CSV file handling, goal setting
+Platform: cross-platform, command-line interface

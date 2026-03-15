@@ -1,0 +1,23 @@
+{
+    "title": "This is a task",
+    "description": "",
+    "status": "None",
+    "priority": 0,
+    "category": "None",
+    "goal_verb": "None",
+    "genre": "None",
+    "use_case": "None",
+    "no_start_date": false,
+    "start_date": "2023-05-19",
+    "no_due_date": false,
+    "due_date": "2023-05-19",
+    "estimated_time_to_complete_checkbox": false,
+    "estimated_time_to_complete": null,
+    "actual_time_to_complete": null,
+    "completed": false,
+    "datetime_completed": "2023-05-19",
+    "comments": "",
+    "attachments": [],
+    "id": "b38300dc-424c-4926-bb7a-edc2e170b4e1",
+    "complete": false
+}

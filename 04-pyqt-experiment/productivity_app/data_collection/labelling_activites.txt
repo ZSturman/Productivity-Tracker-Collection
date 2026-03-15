@@ -1,0 +1,59 @@
+Activities:
+
+- Learning
+    - Reading
+        - Books
+        - Articles
+    - Listening
+        - Audiobooks
+        - Podcasts
+    - Watching
+        - Video Tutorials
+    - Practicing
+        - Hands on
+        - Coding challenges
+- Working
+    - Creative
+        - Designing 
+        - Coding
+        - Writing
+    - Administrative
+        - Scheduling
+        - Planning
+        - Emailing
+    - Review
+        - Code Review
+        - Document Review
+    - Meeting
+    - Research
+- Relaxing
+    - Entertainment
+        - Watching movies
+        - Playing games
+    - Physical
+        - Working out
+        - Yoga
+        - Walking
+    - Hobbies
+        - Gardening
+        - Cooking
+        - Painting
+    - Socializing
+        - Hanging out with friends
+        - Family Time
+- Self Care
+    - Physical Health
+        - Sleeping
+        - Eating
+        - Personal Hygiene
+    - Mental Health
+        - Meditation
+        - Therapy
+        - Journaling
+    - Personal Growth
+        - Goal-setting
+        - Reflection
+- Commuting
+    - Walking
+    - Driving
+    - Public Transport

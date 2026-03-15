@@ -1,0 +1,397 @@
+{"input_types": {
+
+  "required": {
+      "title":{
+        "type": "text",
+        "label": "Title",
+        "description": "The title of the task.",
+        "default": "Untitled",
+        "required": "true",
+        "tab": "basic info"
+      },
+      "identifying_type":{
+        "type": "list",
+        "label": "Identifying type",
+        "description": "The identifying type of the task.",
+        "options": ["Deliverable", "Errand", "Event", "Goal", "Habit", "Milestone", "Project", "Routine", "Task"],
+        "default": "Task",
+        "required": "true",
+        "tab": "basic info"
+      }
+  },
+  "time":{
+    "completed":{
+      "type": "boolean",
+      "label": "Completed",
+      "description": "Whether the task is completed.",
+      "conditional_checkbox": "false",
+      "default": "false",
+      "tab": "basic info"
+    },
+    "date_completed":{
+      "type": "date",
+      "label": "Date completed",
+      "conditional": "time.completed",
+      "description": "The date the task was completed.",
+      "default": "today",
+      "tab": "basic info"
+    },
+    "time_completed":{
+      "type": "time",
+      "label": "Time completed",
+      "conditional": "time.completed",
+      "description": "The time the task was completed.",
+      "default": "now",
+      "tab": "basic info"
+    },
+    "started":{
+      "type": "boolean",
+      "label": "Started",
+      "description": "Whether the task is started.",
+      "conditional_checkbox": "true",
+      "default": "false",
+      "tab": "time management"
+    },
+    "date_started":{
+      "type": "date",
+      "label": "Date started",
+      "conditional": "time.started",
+      "description": "The date the task was started.",
+      "default": "today",
+      "tab": "time management"
+    },
+    "time_started":{
+      "type": "time",
+      "label": "Time started",
+      "conditional": "time.started",
+      "description": "The time the task was started.",
+      "default": "now",
+      "tab": "time management"
+    },
+    "due": {
+      "type": "boolean",
+      "label": "No Due Date",
+      "description": "Remove the due date.",
+      "conditional_checkbox": "true",
+      "default": "false",
+      "tab": "time management"
+    },
+    "date_due": {
+      "type": "date",
+      "label": "Due Date",
+      "conditional": "time.due",
+      "description": "The day the task is due.",
+      "default": "today",
+      "tab": "time management"
+    },
+    "time_due": {
+      "type": "time",
+      "label": "Time Due",
+      "conditional": "time.due",
+      "description": "The time the task is due.",
+      "default": "now ",
+      "tab": "time management"
+    },
+    
+    "time_period":{
+      "type": "list",
+      "label": "Finish by:",
+      "description": "The time period the task is due.",
+      "options": ["whenever", "end of century", "end of the decade", "end of the month", "end of the week", "end of the year", "end of day"],
+      "default": "none",
+      "tab": "time management"
+    },
+    "time_estimate": {
+      "type": "integer",
+      "label": "Time estimate",
+      "description": "The time estimate for the task.",
+      "tab": "time management",
+      "intervals": {
+        "days": {
+          "type": "integer",
+          "label": "Days",
+          "description": "The number of days estimated to complete.",
+          "default": 0
+        },
+        "hours": {
+          "type": "integer",
+          "label": "Hours",
+          "description": "The number of hours estimated to complete.",
+          "default": 0
+        },
+        "minutes": {
+          "type": "integer",
+          "label": "Minutes",
+          "description": "The number of minutes estimated to complete.",
+          "default": 0
+        },
+        "seconds": {
+          "type": "integer",
+          "label": "Seconds",
+          "description": "The number of seconds estimated to complete.",
+          "default": 0
+        }
+      }
+    },
+    "time_spent":{
+      "type": "integer",
+      "label": "Time spent",
+      "description": "The time spent on the task.",
+      "tab": "time management",
+      "intervals": {
+        "days": {
+          "type": "integer",
+          "label": "Days",
+          "description": "The number of days spent.",
+          "default": 0
+        },
+        "hours": {
+          "type": "integer",
+          "label": "Hours",
+          "description": "The number of hours spent.",
+          "default": 0
+        },
+        "minutes": {
+          "type": "integer",
+          "label": "Minutes",
+          "description": "The number of minutes spent.",
+          "default": 0
+        },
+        "seconds": {
+          "type": "integer",
+          "label": "Seconds",
+          "description": "The number of seconds spent.",
+          "default": 0
+        }
+      }
+      }
+    },
+  "tools":{
+    "language":{
+      "type": "list",
+      "label": "Language",
+      "description": "The programming language used to create the task.",
+      "options": ["None","C", "C#", "C++", "Go", "Java", "JavaScript", "Kotlin", "PHP", "Python", "Ruby", "Rust", "Swift", "TypeScript"],
+      "default": "None",
+      "tab": "tools"
+    },
+    "file_output":{
+      "type": "list",
+      "label": "File output",
+      "description": "The file output of the task.",
+      "options": ["None","7Z", "APK", "BIN", "C", "CPP", "CS", "CSS", "CSV", "DB", "DBF", "DMG", "DOC", "DOCX", "EXE", "GO", "GZ", "HTML", "IMG", "IPA", "ISO", "JAR", "JAVA", "JS", "JSON", "KOTLIN", "MDB", "MP3", "MP4", "PDF", "PHP", "PPT", "PPTX", "PY", "RAR", "RUBY", "RUST", "SQL", "SQLITE", "SWIFT", "TAR", "TS", "XLS", "XLSX", "XML", "ZIP"],
+      "default": "None",
+      "tab": "tools"
+    },
+    "medium":{
+      "type": "list",
+      "label": "Medium",
+      "description": "The medium used to create the task.",
+      "options": ["None","Audio", "Book", "Course", "Game", "Movie", "Music", "Podcast", "Software", "Video", "Website"],
+      "default": "None",
+      "tab": "tools"
+    },
+    "hardware_requirements":{
+      "type": "list",
+      "label": "Hardware requirements",
+      "description": "The hardware requirements for the task.",
+      "options": ["None","Computer", "Headphones", "Keyboard", "Laptop", "Microphone", "Monitor", "Mouse", "Phone", "Speakers", "Tablet"],
+      "default": "None",
+      "tab": "tools"
+    },
+    "software_requirements":{
+      "type": "list",
+      "label": "Software requirements",
+      "description": "The software requirements for the task.",
+      "options": ["None","Android", "Chrome", "Firefox", "iOS", "Linux", "Mac", "Windows"],
+      "default": "None",
+      "tab": "tools"
+    }
+  },
+  "descriptors":{
+    "description":{
+      "type": "text",
+      "label": "Description",
+      "description": "The description of the task.",
+      "default": "None",
+      "tab": "basic info"
+    },
+    "category":{
+      "type": "list",
+      "label": "Category",
+      "description": "The category of the task.",
+      "options": ["None","Career", "Contribution", "Education", "Family", "Finance", "Fun & Recreation", "Health", "Hobbies", "Personal", "Personal Growth", "Relationship", "Social", "Spiritual", "Travel", "Wealth", "Work"],
+      "default": "None",
+      "tab": "basic info"
+    },
+
+    "goal_verb":{
+      "type": "list",
+      "label": "Goal verb",
+      "description": "The verb used to describe the goal of the task.",
+      "options": ["None","Achieve", "Be", "Become", "Build", "Buy", "Complete", "Create", "Decrease", "Design", "Develop", "Discover", "Do", "Draw", "Earn", "Enjoy", "Experience", "Explore", "Finish", "Fix", "Grow", "Hate", "Have", "Help", "Improve", "Increase", "Invent", "Learn", "Love", "Maintain", "Make", "Master", "Move", "Obtain", "Organize", "Paint", "Plan", "Play", "Prepare", "Produce", "Publish", "Quit", "Research", "Review", "Run", "Save", "Sell", "Shop", "Sing", "Solve", "Spend", "Start", "Stop", "Streamline", "Study", "Support", "Teach", "Train", "Travel", "Walk", "Win", "Work", "Write"],
+      "default": "None",
+      "tab": "basic info"
+    },
+
+    "genre":{
+      "type": "list",
+      "label": "Genre",
+      "description": "The genre of the task.",
+      "options": ["None","Adventurous", "Analytical", "Creative", "Cultural", "Educational", "Emotional", "Environmental", "Financial", "Health", "Intellectual", "Occupational", "Physical", "Recreational", "Relationship", "Social", "Spiritual"],
+      "default": "None",
+      "tab": "basic info"
+    },
+
+    "use_case":{
+      "type": "list",
+      "label": "Use case",
+      "description": "The use case of the task.",
+      "options": ["None","Calendar", "Diary", "Goal tracking", "Habit tracking", "Journaling", "Note taking", "Planner", "Project management", "Reminder", "Scheduling", "Task list", "Task management", "Task manager", "Task organizer", "Task planner", "Task reminder", "Task scheduler", "Task timer", "Task tracker", "Time tracking", "To-do list"],
+      "default": "None",
+      "tab": "basic info"
+    },
+
+    "priority":{
+      "type": "list",
+      "label": "Priority",
+      "description": "The priority of the task.",
+      "options": ["None","High", "Low", "Medium", "Optional", "Urgent"],
+      "default": "None",
+      "tab": "basic info"
+    },
+
+    "target_audience":{
+      "type": "list",
+      "label": "Target audience",
+      "description": "The target audience of the task.",
+      "options": ["None","Entrepreneurs", "Parents", "People in need", "Professionals", "Self-employed", "Self-learners", "Students"],
+      "default": "None",
+      "tab": "basic info"
+
+    },
+    "educational_topic":{
+      "type": "list",
+      "label": "Educational topic",
+      "description": "The educational topic of the task.",
+      "options": ["None","App development", "Art", "Baking", "Business", "Communication", "Cooking", "Crafts", "Crocheting", "DIY", "Design", "Electronics", "Engineering", "Finance", "Fitness", "Game development", "Gardening", "Geography", "Hardware development", "Health", "History", "Home improvement", "Investing", "Knitting", "Leadership", "Literature", "Management", "Marketing", "Math", "Metalworking", "Music", "Nutrition", "Product development", "Programming", "Public speaking", "Sales", "Science", "Sewing", "Software development", "Technology", "Web development", "Woodworking", "Writing"],
+      "default": "None",
+      "tab": "basic info"
+    },
+
+    "social_impact":{
+      "type": "list",
+      "label": "Social impact",
+      "description": "The social impact of the task.",
+      "options": ["None","Charity", "Community", "Diversity", "Equality", "Ethics", "Human rights", "Inclusion", "Justice", "Philanthropy", "Sustainability", "Cultural", "Economic", "Educational", "Environmental", "Global", "Health", "Interdimensional", "Intergalactic", "International", "Interplanetary", "Interstellar", "Local", "National", "Personal", "Political", "Professional", "Regional", "Scientific", "Social", "Spiritual", "Technological"],
+      "default": "None",
+      "tab": "basic info"
+    }
+},
+"people":{
+    "collaborators": {
+      "type": "self_made_list",
+      "label": "Collaborators",
+      "description": "The collaborators of the task.",
+      "options": [],
+      "tab": "resources"
+    },
+    "stakeholders": {
+      "type": "self_made_list",
+      "label": "Stakeholders",
+      "description": "The stakeholders of the task.",
+      "options": [],
+      "tab": "constraints"
+    }
+  },
+  "progress":{
+    "completion_percentage": {
+      "type": "percentage",
+      "label": "Completion percentage",
+      "description": "The completion percentage of the task.",
+      "options": [],
+      "tab": "basic info"
+    },
+    "parents": {
+      "type": "parents_list",
+      "options":[],
+      "tab": "None"
+    },
+
+    "children": {
+      "type":"children_list",
+      "options": [],
+      "tab": "None"
+    },
+    "status":{
+      "type": "list",
+      "label": "Status",
+      "description": "The status of the task.",
+      "options": ["None","Canceled", "Completed", "Deployment", "Design", "Development", "Idea", "Maintenance", "On Hold", "Planning", "Testing"],
+      "default": "None",
+      "tab": "basic info"
+    }
+  },
+  "resources":{
+    "resources.budget": {
+      "type": "currency",
+      "label": "Budget",
+      "description": "The budget of the task.",
+      "default": "None",
+      "tab": "constraints"
+    },
+    "resources.expenses": {
+      "type": "currency",
+      "label": "Expenses",
+      "description": "The expenses of the task.",
+      "default": "None",
+      "tab": "constraints"
+    },
+    "resources.revenue": {
+      "type": "currency",
+      "label": "Revenue",
+      "description": "The revenue of the task.",
+      "default": "None",
+      "tab": "resources"
+    }
+  },
+  "notes":{
+    "comments": {
+      "type": "self_made_list_comments",
+      "label": "Comments",
+      "description": "The comments for the task.",
+      "default": "None",
+      "options": [],
+      "tab": "resources"
+    },
+    "attachments": {
+      "type": "self_made_list_attachments",
+      "label": "Attachments",
+      "description": "The attachments for the task.",
+      "options": [],
+      "tab": "resources"
+    }
+  },
+  "scheduling":{
+    "is_recurring": {
+      "type": "boolean",
+      "label": "Is recurring",
+      "conditional_checkbox": "true",
+      "description": "Whether the task is recurring.",
+      "default": "false",
+      "tab": "time management"
+    },
+    "recurrence_pattern":{
+      "type": "list",
+      "conditional": "scheduling.is_recurring",
+      "label": "Recurrence pattern",
+      "description": "The recurrence pattern of the task.",
+      "options": ["Daily", "Monthly", "Weekly", "Yearly"],
+      "default": "Daily",
+      "tab": "time management"
+    }
+  }
+  }
+}
+
+

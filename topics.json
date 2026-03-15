@@ -1,0 +1,174 @@
+[
+    {
+        "name": "Physical Well-being",
+        "description": "This includes the desire for health, fitness, vitality, and the absence of pain or discomfort. It's about maintaining the health and functionality of our physical bodies."
+    },
+    {
+        "name": "Safety and Security",
+        "description": "The need for safety and stability in our daily lives, including financial security, health security, and physical safety."
+    },
+    {
+        "name": "Autonomy",
+        "description": "The desire for independence and control over our lives, the ability to make choices and decisions for ourselves."
+    },
+    {
+        "name": "Competence",
+        "description": "We have a deep-rooted desire to be effective in our interactions with the environment. This can also include the need for mastery and understanding in various fields or activities."
+    },
+    {
+        "name": "Purpose and Meaning",
+        "description": "This refers to the desire for life to have a sense of purpose, direction, and personal significance."
+    },
+    {
+        "name": "Love and Connection",
+        "description": "The desire for deep, fulfilling relationships with others. This includes romantic relationships, friendships, and strong family bonds."
+    },
+    {
+        "name": "Esteem",
+        "description": "The need for respect, recognition, and appreciation from others. This also includes self-esteem, or the need for self-respect and self-confidence."
+    },
+    {
+        "name": "Growth and Learning",
+        "description": "The desire for personal development, learning new skills, and acquiring knowledge."
+    },
+    {
+        "name": "Self-Expression",
+        "description": "The need to express our personal ideas, feelings, and identity."
+    },
+    {
+        "name": "Creativity",
+        "description": "The desire to create, to bring something new into existence, to innovate."
+    },
+    {
+        "name": "Contribution",
+        "description": "The desire to contribute to others, to make a positive impact on the world or the people around us."
+    },
+    {
+        "name": "Transcendence/Spirituality",
+        "description": "The desire for spiritual growth, transcendence, and connection to something greater than oneself. This might also include the need for peace and harmony in life."
+    },
+    {
+        "name": "Adventure and Exploration",
+        "description": "The desire to discover new places, experience new things, and break away from routine."
+    },
+    {
+        "name": "Achievement",
+        "description": "The motivation to accomplish challenging goals, overcome obstacles, and rise to the top in one's field."
+    },
+    {
+        "name": "Fun and Enjoyment",
+        "description": "The need for amusement, play, and relaxation. This can be a powerful motivator and adds pleasure to life."
+    },
+    {
+        "name": "Recognition",
+        "description": "The desire to be seen, acknowledged, and valued for our accomplishments, talents, or personal qualities."
+    },
+    {
+        "name": "Influence",
+        "description": "The desire to affect others, shape opinions or events, and have a say in the world around us."
+    },
+    {
+        "name": "Order",
+        "description": "The desire for structure, routine, predictability, and control in one's life."
+    },
+    {
+        "name": "Beauty and Aesthetics",
+        "description": "The desire to appreciate, create, or surround oneself with beauty, be it in physical environments, art, music, or personal appearance."
+    },
+    {
+        "name": "Curiosity",
+        "description": "The need to understand, learn, and make sense of the world around us."
+    },
+    {
+        "name": "Novelty",
+        "description": "The desire for new experiences, variety, and change."
+    },
+    {
+        "name": "Legacy",
+        "description": "The desire to leave something behind, whether it's through one's work, children, or contributions to society."
+    },
+    {
+        "name": "Authenticity",
+        "description": "The desire to be true to oneself, to live in accordance with one's values and beliefs."
+    },
+    {
+        "name": "Integrity",
+        "description": "The desire to be honest, consistent, and to behave in accordance with one's principles."
+    },
+    {
+        "name": "Resilience",
+        "description": "The desire to overcome adversity, to be strong in the face of challenges."
+    },
+    {
+        "name": "Harmony",
+        "description": "The desire for peace, balance, and cooperation in one's relationships and environment."
+    },
+    {
+        "name": "Generosity",
+        "description": "The desire to give, to share, to be kind and helpful to others."
+    },
+    {
+        "name": "Wisdom",
+        "description": "The desire to gain insight, understanding, and a deeper perspective on life."
+    },
+    {
+        "name": "Simplicity",
+        "description": "The desire for a less complicated, more straightforward life. This could involve reducing physical clutter, simplifying relationships, or seeking clarity in one's goals and values."
+    },
+    {
+        "name": "Courage",
+        "description": "The desire to face fear, take risks, and be brave. This could involve stepping out of one's comfort zone, standing up for what one believes in, or facing adversity with strength."
+    },
+    {
+        "name": "Humility",
+        "description": "The desire to be modest and unassuming, recognizing that there is always more to learn and other perspectives to consider."
+    },
+    {
+        "name": "Equality",
+        "description": "The desire for fairness, justice, and equal opportunity. This could manifest as a passion for social justice, a commitment to treating others fairly, or a focus on creating a more equitable society."
+    },
+    {
+        "name": "Loyalty",
+        "description": "The desire to be faithful and dependable. This could involve standing by friends and family, staying true to one's commitments, or maintaining allegiance to a cause or organization."
+    },
+    {
+        "name": "Compassion",
+        "description": "The desire to empathize with the suffering of others and to help alleviate it. This could involve volunteer work, charitable giving, or simply being there for a friend in need."
+    },
+    {
+        "name": "Respect",
+        "description": "The desire to be respected by others, and to show respect for others. This involves recognizing and valuing the worth of all individuals."
+    },
+    {
+        "name": "Patience",
+        "description": "The desire to accept or tolerate delay, problems, or suffering without becoming annoyed or anxious."
+    },
+    {
+        "name": "Belonging",
+        "description": "The desire to be part of a community, to feel connected, and to fit in."
+    },
+    {
+        "name": "Sustainability",
+        "description": "The desire to live in a way that is environmentally responsible and sustainable for future generations."
+    },
+    {
+        "name": "Reputation",
+        "description": "The desire to be regarded in a positive light by others, based on one's actions, accomplishments, or character."
+    },
+    {
+        "name": "Gratitude",
+        "description": "The desire to feel and express appreciation for the good in one's life."
+    },
+    {
+        "name": "Empowerment",
+        "description": "The desire to feel confident and strong, to have control over one's life, and to be able to achieve one's goals."
+    },
+    {
+        "name": "Nurturing",
+        "description": "The desire to care for and protect others, helping them to grow and thrive."
+    },
+    {
+        "name": "Joy",
+        "description": "The desire to experience delight and happiness, and to spread these feelings to others."
+    }
+]

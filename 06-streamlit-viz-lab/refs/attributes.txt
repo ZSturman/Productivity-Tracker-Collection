@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+item_type = ['Project', 'Goal', 'Task', 'Errand']
+
+time_period = ['By end of today', 'By end of the week', 'By end of the month', 'By end of the year', 'By end of the decade', 'Before I die']
+
+priority = ['Urgent', 'High', 'Medium', 'Low', 'Optional']
+
+category = ['Health', 'Wealth', 'Relationship', 'Career', 'Personal Growth', 'Spirituality', 'Social Life', 'Family', 'Fun & Recreation', 'Contribution', 'Education', 'Travel', 'Hobbies']
+
+goal = ["Be", "Do", "Have", "Start", "Stop", "Improve", "Increase", "Decrease", "Maintain", "Finish", "Fix", "Buy", "Sell", "Build", "Paint", "Sing", "Play",  "Draw", "Plan", "Travel", "Move", "Run", "Walk", "Teach", "Help", "Support", "Love", "Hate", "Quit", "Start", "Enjoy", "Reduce", "Organize", "Complete", "Develop", "Grow", "Prepare", "Research", "Review", "Sell", "Shop", "Spend", "Streamline", "Study", "Train", "Work", "Experience", "Achieve", "Design", "Discover", "Explore", "Invent", "Master", "Produce", "Publish", "Solve", "Win", "Become", "Be", "Create", "Earn", "Learn", "Make", "Obtain", "Save",  "Write"]
+
+genre = ['Creative', 'Analytical', 'Physical', 'Social', 'Adventurous', 'Intellectual', 'Emotional', 'Spiritual', 'Financial', 'Environmental', 'Occupational', 'Relationship', 'Health', 'Educational', 'Cultural', 'Recreational']
+
+task_type = ['Habit', 'Project', 'Event', 'Routine', 'Milestone']
+
+project_statuses = ['Idea','Planning','Design','Development','Testing','Deployment','Maintenance','On Hold','Canceled','Completed']

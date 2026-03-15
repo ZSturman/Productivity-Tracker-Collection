@@ -1,0 +1,29 @@
+{
+    "title": "gsgf",
+    "description": "",
+    "status": "None",
+    "priority": 0,
+    "category": "None",
+    "goal_verb": "None",
+    "genre": "None",
+    "use_case": "None",
+    "no_start_date": false,
+    "start_date": "2023-05-19",
+    "no_due_date": false,
+    "due_date": "2023-05-19",
+    "estimated_time_to_complete_checkbox": false,
+    "estimated_time_to_complete": 0,
+    "estimated_time_units": "minutes",
+    "estimated_time_unit_ammount": 1,
+    "actual_time_to_complete": null,
+    "datetime_completed": "2023-05-19",
+    "comments": [
+        "106f0c75-f477-4fa0-881a-a31e14309a52"
+    ],
+    "attachments": [],
+    "id": "dd6cebd5-0f0c-4a1c-988c-f3a0341d5896",
+    "tasks": [],
+    "milestones": [],
+    "deliverables": [],
+    "completed": false
+}

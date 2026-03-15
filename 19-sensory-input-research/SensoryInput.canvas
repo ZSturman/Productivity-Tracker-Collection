@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"76e193a9a47b1027","type":"text","text":"Analysis\n\n","x":-20,"y":-380,"width":250,"height":60},
+		{"id":"37512cb9d0b17ed2","type":"text","text":"Prediction\n","x":-20,"y":-260,"width":250,"height":60},
+		{"id":"3dfbc856aa50a8d3","type":"text","text":"Body\n","x":180,"y":102,"width":250,"height":60},
+		{"id":"a3aae48957889f63","type":"text","text":"Action\n","x":-20,"y":-140,"width":250,"height":60},
+		{"id":"36e446afd4d3886f","type":"text","text":"Expectation\n","x":-180,"y":102,"width":250,"height":60},
+		{"id":"9fe6e7457a3f7ce2","type":"text","text":"Output\n","x":0,"y":302,"width":250,"height":60},
+		{"id":"56123f3eefe44439","type":"text","text":"Memory\n\n","x":0,"y":482,"width":250,"height":60},
+		{"id":"69d805e9e990c4db","type":"text","text":"Memory\n","x":180,"y":-540,"width":250,"height":60},
+		{"id":"4374d97717fae52a","type":"text","text":"Sensory Input\n\n","x":-20,"y":-670,"width":250,"height":60},
+		{"id":"7e5e21d6687704e1","type":"text","text":"Extreme/ Frightening/ Dangerous Input","x":-20,"y":-780,"width":250,"height":60,"color":"1"}
+	],
+	"edges":[
+		{"id":"b9ceef017a040259","fromNode":"4374d97717fae52a","fromSide":"bottom","toNode":"76e193a9a47b1027","toSide":"top","color":"1"},
+		{"id":"fc3849268dfbfb7f","fromNode":"69d805e9e990c4db","fromSide":"bottom","toNode":"76e193a9a47b1027","toSide":"top","color":"1"},
+		{"id":"1192bf8fa8354bf4","fromNode":"76e193a9a47b1027","fromSide":"right","toNode":"a3aae48957889f63","toSide":"right","color":"1"},
+		{"id":"c51ecca709609892","fromNode":"a3aae48957889f63","fromSide":"bottom","toNode":"3dfbc856aa50a8d3","toSide":"top","color":"1"},
+		{"id":"b60945cc2a7ec30f","fromNode":"a3aae48957889f63","fromSide":"bottom","toNode":"36e446afd4d3886f","toSide":"top","color":"1"},
+		{"id":"d3b69084cd4354b6","fromNode":"3dfbc856aa50a8d3","fromSide":"bottom","toNode":"9fe6e7457a3f7ce2","toSide":"top","color":"1"},
+		{"id":"8aff6d8ea9fc063a","fromNode":"9fe6e7457a3f7ce2","fromSide":"bottom","toNode":"56123f3eefe44439","toSide":"top","color":"1"},
+		{"id":"6e4149160e92b34a","fromNode":"36e446afd4d3886f","fromSide":"bottom","toNode":"9fe6e7457a3f7ce2","toSide":"top","color":"1"}
+	]
+}

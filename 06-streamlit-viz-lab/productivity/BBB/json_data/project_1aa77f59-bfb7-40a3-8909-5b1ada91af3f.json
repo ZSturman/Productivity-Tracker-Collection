@@ -1,0 +1,33 @@
+{
+    "title": "Here we go",
+    "description": "",
+    "status": "None",
+    "priority": 0,
+    "category": "None",
+    "goal_verb": "None",
+    "genre": "None",
+    "use_case": "None",
+    "no_start_date": false,
+    "start_date": "2023-05-19",
+    "no_due_date": false,
+    "due_date": "2023-05-19",
+    "estimated_time_to_complete_checkbox": false,
+    "estimated_time_to_complete": 0,
+    "estimated_time_units": "minutes",
+    "estimated_time_unit_ammount": 1,
+    "actual_time_to_complete": null,
+    "datetime_completed": "2023-05-19",
+    "comments": "",
+    "attachments": [
+        [
+            "d4662b11-0ad7-4e97-a0d1-e113f31b0f12",
+            "97f74789-5097-4d38-9d22-d0da7bc667db",
+            "fecfca9f-fd71-4b7d-a636-67343188b512"
+        ]
+    ],
+    "id": "1aa77f59-bfb7-40a3-8909-5b1ada91af3f",
+    "tasks": [],
+    "milestones": [],
+    "deliverables": [],
+    "completed": false
+}

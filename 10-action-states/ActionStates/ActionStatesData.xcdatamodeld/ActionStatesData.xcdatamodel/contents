@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ActionStateEntity" representedClassName="ActionStateEntity" syncable="YES">
+        <attribute name="collectDate" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="collectLocation" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="collectTime" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="explanation" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="manualInputs" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ManualInputEntity" inverseName="actionState" inverseEntity="ManualInputEntity"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TagEntity" inverseName="actionStates" inverseEntity="TagEntity"/>
+        <relationship name="topic" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TopicEntity" inverseName="actionStates" inverseEntity="TopicEntity"/>
+    </entity>
+    <entity name="ListEntity" representedClassName="ListEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="listItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ListItemEntity" inverseName="list" inverseEntity="ListItemEntity"/>
+        <relationship name="manualInputs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManualInputEntity" inverseName="list" inverseEntity="ManualInputEntity"/>
+    </entity>
+    <entity name="ListItemEntity" representedClassName="ListItemEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ListEntity" inverseName="listItems" inverseEntity="ListEntity"/>
+    </entity>
+    <entity name="ManualInputEntity" representedClassName="ManualInputEntity" syncable="YES">
+        <attribute name="booleanValue" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dateValue" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inputType" optional="YES" attributeType="String"/>
+        <attribute name="numberValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="prompt" optional="YES" attributeType="String"/>
+        <attribute name="timeValue" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="actionState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActionStateEntity" inverseName="manualInputs" inverseEntity="ActionStateEntity"/>
+        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ListEntity" inverseName="manualInputs" inverseEntity="ListEntity"/>
+    </entity>
+    <entity name="TagEntity" representedClassName="TagEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="tagDescription" optional="YES" attributeType="String"/>
+        <relationship name="actionStates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ActionStateEntity" inverseName="tags" inverseEntity="ActionStateEntity"/>
+    </entity>
+    <entity name="TopicEntity" representedClassName="TopicEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="topicDescription" optional="YES" attributeType="String"/>
+        <relationship name="actionStates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ActionStateEntity" inverseName="topic" inverseEntity="ActionStateEntity"/>
+    </entity>
+</model>

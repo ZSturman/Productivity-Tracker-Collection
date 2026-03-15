@@ -1,0 +1,368 @@
+Attention (Sustained, Selective): 
+- How many minutes were you able to work on a task without getting distracted today?
+
+Focus: 
+- Rate your level of focus during your most recent task (1-5, with 5 being extremely focused).
+
+Memory: 
+- How many items on your to-do list were you able to remember without checking it?
+
+Hand-Eye Coordination: 
+- How many typing errors did you make in your last email or document?
+
+Processing Speed: 
+- How quickly were you able to comprehend the last article or report you read?
+
+Executive Functioning: 
+- Did you make a plan for your tasks today? If so, rate your ability to follow the plan (1-5, with 5 being followed perfectly).
+
+Spatial Awareness: 
+- Did you have any trouble navigating a familiar or new area today?
+
+Language Skills: 
+- How comfortable did you feel in your last conversation or written communication?
+
+Visual Perception: 
+- How easily were you able to understand the last graph or visual information you saw?
+
+Motor Skills: 
+- Rate your coordination in a recent physical task (cooking, sports, typing etc.)
+
+Emotional Regulation: 
+- Rate your emotional stability today (1-5, with 5 being very stable).
+
+Working Memory: 
+- Were you able to remember and use information in your tasks today without having to look it up?
+
+Creativity: 
+- Rate your ability to come up with unique solutions or ideas during your tasks today.
+
+Inhibition Control: 
+- Were you able to resist distractions during your most recent task?
+
+Logical Reasoning: 
+- Rate your ability to solve a complex problem or make a decision today (1-5, with 5 being very capable).
+
+Abstract Thinking: 
+- Were you able to understand and relate to abstract concepts in your tasks today?
+
+Intuition: 
+- Was there a situation today where you made a correct decision based on your gut feeling?
+
+Flexibility: 
+- Were you able to easily shift your focus from one task to another today?
+
+Decision Making:
+- Rate your satisfaction with the decisions you made today (1-5, with 5 being very satisfied).
+
+Estimation: 
+- Were you able to make accurate estimations (time, quantity, etc.) today?
+
+Recognition: 
+- Were you able to remember people, places or things from your past that came up today?
+
+Mental Imagery: 
+- Were you able to visualize scenarios, objects, or outcomes in your mind during tasks today?
+
+Mathematical Ability: 
+- Were you able to perform necessary mathematical calculations accurately and quickly today?
+
+Metacognition: 
+- Were you aware of your thought processes during tasks today? Did you recognize when a strategy was not working and changed your approach?
+
+Perceptual-Motor Integration: 
+- Rate your performance in any task that required coordination of perception and movement (1-5, with 5 being very coordinated).
+
+Sequencing: 
+- Were you able to perform tasks in a logical and efficient order today?
+
+Spatial Memory: 
+- How well were you able to remember and navigate spaces you were in today?
+
+Temporal Awareness: 
+- Were you accurately aware of the passage of time today?
+
+Empathy: 
+- Were you able to understand and relate to the feelings of others today?
+
+Insight: 
+- Were you able to gain a deep understanding of a complex situation or problem today?
+
+Problem Sensitivity: 
+- Did you recognize potential problems in your tasks today and take steps to prevent them
+
+
+
+
+
+Physical Health & Well-being
+Sleep: 
+- How well did you sleep last night (1-5, with 5 being very well)?
+
+Pain/Discomfort: 
+- Did you experience any physical discomfort or pain today?
+
+
+Social Interactions
+Social Activities: 
+- How many social interactions did you have today?
+
+Quality of Interaction: 
+- How would you rate the quality of your social interactions today (1-5, with 5 being very positive)?
+
+Support: 
+- Did you feel supported by others today?
+
+Conflict: 
+- Were there any conflicts in your social interactions today?
+
+Loneliness: 
+- Did you feel lonely at any point today?
+
+
+
+
+Mood/Emotional State
+Happiness: 
+- Rate your overall happiness level today (1-5, with 5 being very happy).
+
+Stress: 
+- Rate your stress level today (1-5, with 5 being very stressed).
+
+Anxiety: 
+- Did you feel anxious at any point today?
+
+Depression: 
+- Did you feel down or depressed at any point today?
+
+Emotional Stability: 
+- Rate your emotional stability today (1-5, with 5 being very stable).
+
+
+Personal Development & Learning
+New Knowledge: 
+- Did you learn something new today?
+
+Skill Development: 
+- Did you practice or improve a skill today?
+
+Reading: 
+- Did you read any books or articles for personal development today?
+
+Goal Progress: 
+- Did you make progress towards a personal goal today?
+
+Creativity: 
+- Did you engage in any creative activities or exercises today?
+
+
+Mindfulness & Self-Care
+Meditation: 
+- Did you meditate today? How long?
+
+Self-Care Activities: 
+- Did you engage in any self-care activities today? (eg: bath, leisure walk, etc.)
+
+Present Moment Awareness: 
+- Rate your level of mindfulness throughout the day (1-5, with 5 being completely present).
+
+Relaxation: 
+- How relaxed did you feel today?
+
+
+
+Productivity
+Task Completion: 
+- How many tasks on your to-do list did you complete today?
+
+Procrastination: 
+- Did you procrastinate on any tasks today?
+
+Efficiency: 
+- How efficiently do you feel you used your time today?
+
+
+
+Environment & Surroundings
+Nature Interaction: 
+- Did you spend time in nature today?
+
+Cleanliness: 
+- Is your living/working space clean and organized?
+
+Home Comfort: 
+- How comfortable did you feel in your home environment today?
+
+
+Entertainment & Leisure
+Fun: 
+- Did you do something purely for fun today?
+
+Hobbies: 
+- Did you spend time on your hobbies today?
+
+Entertainment: 
+- Did you watch a movie, read a book, or play a game today?
+
+
+Travel & Exploration
+New Experiences: 
+- Did you try something new or go somewhere new today?
+
+Travel: 
+- Did you travel today, even if it's a short trip in your local area?
+
+Adventure: 
+- Did you have any adventures or exciting experiences today?
+
+Personal Relationships
+Romantic Relationship: 
+- If applicable, how satisfied were you with your romantic interactions today?
+
+Family Relations: 
+- How would you rate your interaction with family members today (1-5, with 5 being very positive)?
+
+Friendship: 
+- How satisfying were your interactions with friends today?
+
+Professional Development
+Career Progress: 
+- Did you take any actions toward career advancement today (learning a new skill, networking, etc.)?
+
+Work Satisfaction: 
+- How satisfied were you with your work today?
+
+Work-Life Balance: 
+- How well did you balance your work with other life responsibilities today?
+
+Lifestyle Choices
+Screen Time: 
+- How many hours did you spend on screens (computers, phones, TV, etc.) today?
+
+
+
+Civic Engagement
+Volunteering: 
+- Did you volunteer or help someone in your community today?
+
+Political Involvement: 
+- Did you engage in any political activities (keeping up with news, advocating for an issue, etc.) today?
+
+Environmental Impact: 
+- Did you make choices to reduce your environmental impact today (like recycling, reducing energy consumption, etc.)?
+
+
+
+Cultural Engagement
+Arts and Culture: 
+- Did you engage in any cultural activities today (like visiting a museum, attending a concert, reading literature, etc.)?
+
+Language Learning: 
+- Did you spend any time learning a new language today?
+
+Culinary Exploration: 
+- Did you try cooking a new recipe or tasting a new cuisine today?
+
+Personal Growth
+Self-Reflection: 
+- Did you spend time on self-reflection today?
+
+Goal Setting: 
+- Did you set any new personal goals today?
+
+Resilience: 
+- Did you bounce back from any setbacks today?
+
+
+
+
+Mood/Emotional State
+Optimism: 
+- How optimistic did you feel today on a scale of 1-5 (with 5 being very optimistic)?
+
+Calmness: 
+- How calm were you today on a scale of 1-5?
+
+Irritability: 
+- Were there any moments of irritability or anger today?
+
+Joy: 
+- How many moments of joy did you experience today?
+
+Satisfaction: 
+- How satisfied were you with your day overall?
+
+
+
+Personal Development & Learning
+Learning Sources: 
+- What new information sources (books, articles, podcasts, courses) did you explore today?
+
+Challenges: 
+- What challenges did you overcome today? How did they contribute to your growth?
+
+New Skills: 
+- What new skills did you start learning or practicing today?
+
+Knowledge Application: 
+- Where were you able to apply the knowledge you gained recently?
+
+
+
+Mindfulness & Self-Care
+Mindfulness Practices: 
+- Besides meditation, what other mindfulness practices did you perform today (e.g., mindful eating, walking, breathing)?
+
+Self-Care Routine: 
+- How consistent were you with your self-care routine today?
+
+Gratitude: 
+- What are you grateful for today?
+
+Body Awareness: 
+- Were you in tune with your body's needs today (hunger, fatigue, rest)?
+
+
+
+Productivity
+Prioritization: 
+- Were you able to prioritize tasks effectively today?
+
+Time Management: 
+- How effectively did you manage your time?
+
+Breaks: 
+- Did you take regular breaks to prevent burnout?
+
+Achievements: 
+- What were your biggest achievements today?
+
+Professional Development
+Career Goals: 
+- Did you make progress towards your career goals today?
+
+Networking: 
+- Did you make any new professional connections or strengthen existing ones?
+
+Skill Improvement: 
+- What skills did you enhance today that will contribute to your professional growth?
+
+Feedback: 
+- Did you receive or provide any constructive feedback today?
+
+
+
+Personal Growth
+Self-Awareness: 
+- Did you gain any new insights about yourself today?
+
+Values: 
+- Did your activities today align with your personal values and beliefs?
+
+Boundaries: 
+- Were you able to set and maintain healthy boundaries today (saying no, asking for what you need)?
+
+Resilience: 
+- How did you handle setbacks or challenges today? What did you learn from them? 
+
+

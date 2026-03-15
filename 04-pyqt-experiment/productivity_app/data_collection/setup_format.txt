@@ -1,0 +1,4 @@
+What we want:
+- Be able to have random popups when doing work also throughout the day for gathering information
+- Be able to play games to test this stuff
+- Keep track of what data is being contributed to the most and what is being contributed to the least
